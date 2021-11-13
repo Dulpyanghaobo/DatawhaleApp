@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // 将label加入父视图
         view.addSubview(label)
         // 设置label的frame
