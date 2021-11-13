@@ -13,10 +13,10 @@ target 'DatawhaleApp' do
     pod 'Moya/Combine'
     pod 'SwiftyJSON'
     pod 'SwiftDate'
-    pod 'CBFlashyTabBarController'
     pod 'Kingfisher'
     pod 'URLNavigator'
     pod 'ESPullToRefresh'
+    pod 'JJFloatingActionButton'
 
   target 'DatawhaleAppTests' do
     inherit! :search_paths

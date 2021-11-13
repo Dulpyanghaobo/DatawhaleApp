@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double CBFlashyTabBarControllerVersionNumber;
-FOUNDATION_EXPORT const unsigned char CBFlashyTabBarControllerVersionString[];
+FOUNDATION_EXPORT double JJFloatingActionButtonVersionNumber;
+FOUNDATION_EXPORT const unsigned char JJFloatingActionButtonVersionString[];
 

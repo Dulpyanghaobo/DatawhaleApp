@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5737872A76EFCB2A97F445D9434307C7"
-               BuildableName = "CBFlashyTabBarController.framework"
-               BlueprintName = "CBFlashyTabBarController"
+               BlueprintIdentifier = "E109C6B6B466F202BA0B94E76B45D72B"
+               BuildableName = "JJFloatingActionButton.framework"
+               BlueprintName = "JJFloatingActionButton"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
