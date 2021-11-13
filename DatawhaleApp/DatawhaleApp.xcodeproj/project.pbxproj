@@ -18,6 +18,8 @@
 		DA5D91EA274032B400699555 /* DatawhaleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91E9274032B400699555 /* DatawhaleAppTests.swift */; };
 		DA5D91F4274032B400699555 /* DatawhaleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91F3274032B400699555 /* DatawhaleAppUITests.swift */; };
 		DA5D91F6274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91F5274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift */; };
+		DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D9220274043EE00699555 /* DWBaseViewController.swift */; };
+		DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92222740442A00699555 /* DWNavigationController.swift */; };
 		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
 		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		DA5D91EF274032B400699555 /* DatawhaleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatawhaleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5D91F3274032B400699555 /* DatawhaleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatawhaleAppUITests.swift; sourceTree = "<group>"; };
 		DA5D91F5274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatawhaleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA5D9220274043EE00699555 /* DWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWBaseViewController.swift; sourceTree = "<group>"; };
+		DA5D92222740442A00699555 /* DWNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWNavigationController.swift; sourceTree = "<group>"; };
 		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +148,8 @@
 				DA5D920227403B8900699555 /* AppDelegate */,
 				DA5D920327403B9800699555 /* Functions */,
 				DA5D920427403BAD00699555 /* Tools */,
+				DA5D921D2740437C00699555 /* Networking */,
+				DA5D921C2740436E00699555 /* Domain */,
 				DA5D920527403BBB00699555 /* Repackage */,
 				DA5D920627403BC600699555 /* Support Files */,
 				DA5D920727403BCE00699555 /* OtherResources */,
@@ -186,6 +192,7 @@
 		DA5D920327403B9800699555 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				DA5D921E274043CF00699555 /* Base */,
 				DA5D92132740400B00699555 /* Guide */,
 				DA5D920827403F9500699555 /* Home */,
 				DA5D92172740404200699555 /* AILab */,
@@ -243,6 +250,7 @@
 		DA5D920927403F9D00699555 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				DA5D92182740434300699555 /* Remind */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -336,6 +344,52 @@
 			children = (
 			);
 			path = AILab;
+			sourceTree = "<group>";
+		};
+		DA5D92182740434300699555 /* Remind */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D921A2740434E00699555 /* Presenter */,
+				DA5D92192740434900699555 /* View */,
+			);
+			path = Remind;
+			sourceTree = "<group>";
+		};
+		DA5D92192740434900699555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA5D921A2740434E00699555 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DA5D921C2740436E00699555 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DA5D921D2740437C00699555 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DA5D921E274043CF00699555 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D9220274043EE00699555 /* DWBaseViewController.swift */,
+				DA5D92222740442A00699555 /* DWNavigationController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,9 +631,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
 				DA5D91DA274032B200699555 /* DatawhaleApp.xcdatamodeld in Sources */,
 				DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */,
+				DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */,
 				DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
