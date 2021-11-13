@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '13.0'
+
+target 'DatawhaleApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Crashlytics'
+    #Swift库
+    pod 'SnapKit'
+    pod 'Hero'
+    pod 'lottie-ios'
+    pod 'Moya/Combine'
+    pod 'SwiftyJSON'
+    pod 'SwiftDate'
+    pod 'CBFlashyTabBarController'
+    pod 'Kingfisher'
+    pod 'URLNavigator'
+    pod 'ESPullToRefresh'
+
+  target 'DatawhaleAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DatawhaleAppUITests' do
+    # Pods for testing
+  end
+
+end

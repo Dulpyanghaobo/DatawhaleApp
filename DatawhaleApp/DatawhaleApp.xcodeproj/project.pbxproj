@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		617DB624CD4158B09006EC43 /* Pods_DatawhaleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */; };
 		DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91CF274032B200699555 /* AppDelegate.swift */; };
 		DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D1274032B200699555 /* SceneDelegate.swift */; };
 		DA5D91D4274032B200699555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D3274032B200699555 /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 		DA5D91EA274032B400699555 /* DatawhaleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91E9274032B400699555 /* DatawhaleAppTests.swift */; };
 		DA5D91F4274032B400699555 /* DatawhaleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91F3274032B400699555 /* DatawhaleAppUITests.swift */; };
 		DA5D91F6274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91F5274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift */; };
+		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
+		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		216A171B09EB1E62BEBD437E /* Pods-DatawhaleApp-DatawhaleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		56A5C9C6C9CBDE6A270C2404 /* Pods-DatawhaleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleAppTests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleAppTests/Pods-DatawhaleAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		899232B2B170969C2E94492B /* Pods-DatawhaleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleAppTests/Pods-DatawhaleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleApp_DatawhaleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2A42E2AF25CD4E1DEBC754 /* Pods-DatawhaleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.release.xcconfig"; sourceTree = "<group>"; };
+		B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5D91CC274032B200699555 /* DatawhaleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatawhaleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5D91CF274032B200699555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA5D91D1274032B200699555 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		DA5D91EF274032B400699555 /* DatawhaleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatawhaleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5D91F3274032B400699555 /* DatawhaleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatawhaleAppUITests.swift; sourceTree = "<group>"; };
 		DA5D91F5274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatawhaleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617DB624CD4158B09006EC43 /* Pods_DatawhaleAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		726561BA0EE9C4928B76E991 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */,
+				AF2A42E2AF25CD4E1DEBC754 /* Pods-DatawhaleApp.release.xcconfig */,
+				216A171B09EB1E62BEBD437E /* Pods-DatawhaleApp-DatawhaleAppUITests.debug.xcconfig */,
+				DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */,
+				899232B2B170969C2E94492B /* Pods-DatawhaleAppTests.debug.xcconfig */,
+				56A5C9C6C9CBDE6A270C2404 /* Pods-DatawhaleAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A55047F058B5753B49BFA92F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */,
+				93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */,
+				B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA5D91C3274032B200699555 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				DA5D91E8274032B400699555 /* DatawhaleAppTests */,
 				DA5D91F2274032B400699555 /* DatawhaleAppUITests */,
 				DA5D91CD274032B200699555 /* Products */,
+				726561BA0EE9C4928B76E991 /* Pods */,
+				A55047F058B5753B49BFA92F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +141,12 @@
 		DA5D91CE274032B200699555 /* DatawhaleApp */ = {
 			isa = PBXGroup;
 			children = (
-				DA5D91CF274032B200699555 /* AppDelegate.swift */,
-				DA5D91D1274032B200699555 /* SceneDelegate.swift */,
+				DA5D920227403B8900699555 /* AppDelegate */,
+				DA5D920327403B9800699555 /* Functions */,
+				DA5D920427403BAD00699555 /* Tools */,
+				DA5D920527403BBB00699555 /* Repackage */,
+				DA5D920627403BC600699555 /* Support Files */,
+				DA5D920727403BCE00699555 /* OtherResources */,
 				DA5D91D3274032B200699555 /* ViewController.swift */,
 				DA5D91D5274032B200699555 /* Main.storyboard */,
 				DA5D91DB274032B400699555 /* Assets.xcassets */,
@@ -130,6 +174,170 @@
 			path = DatawhaleAppUITests;
 			sourceTree = "<group>";
 		};
+		DA5D920227403B8900699555 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D91CF274032B200699555 /* AppDelegate.swift */,
+				DA5D91D1274032B200699555 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DA5D920327403B9800699555 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D92132740400B00699555 /* Guide */,
+				DA5D920827403F9500699555 /* Home */,
+				DA5D92172740404200699555 /* AILab */,
+				DA5D92162740403800699555 /* Record */,
+				DA5D92152740402D00699555 /* Feedback */,
+				DA5D92142740401E00699555 /* Medal */,
+				DA5D921227403FFF00699555 /* Read */,
+				DA5D921127403FF000699555 /* Relax */,
+				DA5D921027403FE900699555 /* Study */,
+				DA5D920F27403FD600699555 /* DaySummary */,
+				DA5D920E27403FCB00699555 /* Task */,
+				DA5D920D27403FB500699555 /* Login */,
+				DA5D920C27403FAE00699555 /* Meta */,
+				DA5D920A27403FA300699555 /* Camera */,
+				DA5D920927403F9D00699555 /* Me */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		DA5D920427403BAD00699555 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DA5D920527403BBB00699555 /* Repackage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repackage;
+			sourceTree = "<group>";
+		};
+		DA5D920627403BC600699555 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		DA5D920727403BCE00699555 /* OtherResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OtherResources;
+			sourceTree = "<group>";
+		};
+		DA5D920827403F9500699555 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA5D920927403F9D00699555 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		DA5D920A27403FA300699555 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		DA5D920C27403FAE00699555 /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Meta;
+			sourceTree = "<group>";
+		};
+		DA5D920D27403FB500699555 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DA5D920E27403FCB00699555 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		DA5D920F27403FD600699555 /* DaySummary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DaySummary;
+			sourceTree = "<group>";
+		};
+		DA5D921027403FE900699555 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		DA5D921127403FF000699555 /* Relax */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Relax;
+			sourceTree = "<group>";
+		};
+		DA5D921227403FFF00699555 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
+		DA5D92132740400B00699555 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		DA5D92142740401E00699555 /* Medal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Medal;
+			sourceTree = "<group>";
+		};
+		DA5D92152740402D00699555 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		DA5D92162740403800699555 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		DA5D92172740404200699555 /* AILab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AILab;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +345,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA5D91F9274032B400699555 /* Build configuration list for PBXNativeTarget "DatawhaleApp" */;
 			buildPhases = (
+				C6EE7EE40F16C1723823C21A /* [CP] Check Pods Manifest.lock */,
 				DA5D91C8274032B200699555 /* Sources */,
 				DA5D91C9274032B200699555 /* Frameworks */,
 				DA5D91CA274032B200699555 /* Resources */,
+				4508E5EE33E19AB0FE85F8F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +364,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA5D91FC274032B400699555 /* Build configuration list for PBXNativeTarget "DatawhaleAppTests" */;
 			buildPhases = (
+				51F04ADDAD657B2309C89707 /* [CP] Check Pods Manifest.lock */,
 				DA5D91E1274032B400699555 /* Sources */,
 				DA5D91E2274032B400699555 /* Frameworks */,
 				DA5D91E3274032B400699555 /* Resources */,
@@ -172,9 +383,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA5D91FF274032B400699555 /* Build configuration list for PBXNativeTarget "DatawhaleAppUITests" */;
 			buildPhases = (
+				647174D9FA37B2E187D6FD03 /* [CP] Check Pods Manifest.lock */,
 				DA5D91EB274032B400699555 /* Sources */,
 				DA5D91EC274032B400699555 /* Frameworks */,
 				DA5D91ED274032B400699555 /* Resources */,
+				B59001FB5BF01317493B2661 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +468,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4508E5EE33E19AB0FE85F8F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51F04ADDAD657B2309C89707 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatawhaleAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		647174D9FA37B2E187D6FD03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatawhaleApp-DatawhaleAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B59001FB5BF01317493B2661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6EE7EE40F16C1723823C21A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DatawhaleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA5D91C8274032B200699555 /* Sources */ = {
@@ -371,7 +687,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -426,7 +742,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,6 +754,7 @@
 		};
 		DA5D91FA274032B400699555 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,9 +768,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +787,7 @@
 		};
 		DA5D91FB274032B400699555 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2A42E2AF25CD4E1DEBC754 /* Pods-DatawhaleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -482,9 +801,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,6 +820,7 @@
 		};
 		DA5D91FD274032B400699555 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 899232B2B170969C2E94492B /* Pods-DatawhaleAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -525,6 +846,7 @@
 		};
 		DA5D91FE274032B400699555 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A5C9C6C9CBDE6A270C2404 /* Pods-DatawhaleAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +872,7 @@
 		};
 		DA5D9200274032B400699555 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216A171B09EB1E62BEBD437E /* Pods-DatawhaleApp-DatawhaleAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -573,6 +896,7 @@
 		};
 		DA5D9201274032B400699555 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
