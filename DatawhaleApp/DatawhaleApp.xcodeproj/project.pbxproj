@@ -21,6 +21,16 @@
 		DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D9220274043EE00699555 /* DWBaseViewController.swift */; };
 		DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92222740442A00699555 /* DWNavigationController.swift */; };
 		DA5D922527404A9000699555 /* DWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D922427404A9000699555 /* DWTabBarController.swift */; };
+		DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92282741027D00699555 /* DWHomeViewController.swift */; };
+		DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D922C274102A000699555 /* DWMeViewController.swift */; };
+		DA5D92302741053600699555 /* DWTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D922F2741053600699555 /* DWTabBar.swift */; };
+		DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92322741058500699555 /* UIColor+Extension.swift */; };
+		DA5D92362741067900699555 /* Color+Tone.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92352741067800699555 /* Color+Tone.swift */; };
+		DA5D92552741552B00699555 /* DWClouseDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92522741552B00699555 /* DWClouseDefines.swift */; };
+		DA5D92562741552B00699555 /* DWQuoteDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92532741552B00699555 /* DWQuoteDefines.swift */; };
+		DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92542741552B00699555 /* DWDeviceDefines.swift */; };
+		DA5D9261274159AA00699555 /* UIDevice+DWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5D9260274159AA00699555 /* UIDevice+DWExtension.m */; };
+		DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D926327415E7100699555 /* UIFont+Extension.swift */; };
 		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
 		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +77,18 @@
 		DA5D9220274043EE00699555 /* DWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWBaseViewController.swift; sourceTree = "<group>"; };
 		DA5D92222740442A00699555 /* DWNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWNavigationController.swift; sourceTree = "<group>"; };
 		DA5D922427404A9000699555 /* DWTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWTabBarController.swift; sourceTree = "<group>"; };
+		DA5D92282741027D00699555 /* DWHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeViewController.swift; sourceTree = "<group>"; };
+		DA5D922C274102A000699555 /* DWMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWMeViewController.swift; sourceTree = "<group>"; };
+		DA5D922F2741053600699555 /* DWTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWTabBar.swift; sourceTree = "<group>"; };
+		DA5D92322741058500699555 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DA5D92352741067800699555 /* Color+Tone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Tone.swift"; sourceTree = "<group>"; };
+		DA5D92522741552B00699555 /* DWClouseDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWClouseDefines.swift; sourceTree = "<group>"; };
+		DA5D92532741552B00699555 /* DWQuoteDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWQuoteDefines.swift; sourceTree = "<group>"; };
+		DA5D92542741552B00699555 /* DWDeviceDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWDeviceDefines.swift; sourceTree = "<group>"; };
+		DA5D925B2741589600699555 /* DatawhaleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DatawhaleApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA5D925F274159AA00699555 /* UIDevice+DWExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DWExtension.h"; sourceTree = "<group>"; };
+		DA5D9260274159AA00699555 /* UIDevice+DWExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DWExtension.m"; sourceTree = "<group>"; };
+		DA5D926327415E7100699555 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +216,7 @@
 		DA5D920327403B9800699555 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				DA5D922E2741052200699555 /* Tabbar */,
 				DA5D921E274043CF00699555 /* Base */,
 				DA5D92132740400B00699555 /* Guide */,
 				DA5D920827403F9500699555 /* Home */,
@@ -217,6 +240,7 @@
 		DA5D920427403BAD00699555 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				DA5D92312741056400699555 /* UIComponent */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -245,6 +269,8 @@
 		DA5D920827403F9500699555 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DA5D92272741026700699555 /* Presenter */,
+				DA5D92262741026300699555 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -252,6 +278,8 @@
 		DA5D920927403F9D00699555 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				DA5D922B2741029000699555 /* Presenter */,
+				DA5D922A2741028C00699555 /* View */,
 				DA5D92182740434300699555 /* Remind */,
 			);
 			path = Me;
@@ -390,9 +418,95 @@
 			children = (
 				DA5D9220274043EE00699555 /* DWBaseViewController.swift */,
 				DA5D92222740442A00699555 /* DWNavigationController.swift */,
-				DA5D922427404A9000699555 /* DWTabBarController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		DA5D92262741026300699555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D92282741027D00699555 /* DWHomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA5D92272741026700699555 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DA5D922A2741028C00699555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D922C274102A000699555 /* DWMeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA5D922B2741029000699555 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DA5D922E2741052200699555 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D922427404A9000699555 /* DWTabBarController.swift */,
+				DA5D922F2741053600699555 /* DWTabBar.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		DA5D92312741056400699555 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D926227415E5F00699555 /* Font */,
+				DA5D9258274155BD00699555 /* Device */,
+				DA5D92512741551D00699555 /* Defines */,
+				DA5D92342741061000699555 /* Color */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		DA5D92342741061000699555 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D92322741058500699555 /* UIColor+Extension.swift */,
+				DA5D92352741067800699555 /* Color+Tone.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		DA5D92512741551D00699555 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D92522741552B00699555 /* DWClouseDefines.swift */,
+				DA5D92542741552B00699555 /* DWDeviceDefines.swift */,
+				DA5D92532741552B00699555 /* DWQuoteDefines.swift */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		DA5D9258274155BD00699555 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D925B2741589600699555 /* DatawhaleApp-Bridging-Header.h */,
+				DA5D925F274159AA00699555 /* UIDevice+DWExtension.h */,
+				DA5D9260274159AA00699555 /* UIDevice+DWExtension.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		DA5D926227415E5F00699555 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D926327415E7100699555 /* UIFont+Extension.swift */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,6 +582,7 @@
 				TargetAttributes = {
 					DA5D91CB274032B200699555 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					DA5D91E4274032B400699555 = {
 						CreatedOnToolsVersion = 13.1;
@@ -634,11 +749,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */,
+				DA5D92562741552B00699555 /* DWQuoteDefines.swift in Sources */,
 				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
+				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
 				DA5D922527404A9000699555 /* DWTabBarController.swift in Sources */,
+				DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */,
 				DA5D91DA274032B200699555 /* DatawhaleApp.xcdatamodeld in Sources */,
+				DA5D92362741067900699555 /* Color+Tone.swift in Sources */,
+				DA5D92552741552B00699555 /* DWClouseDefines.swift in Sources */,
+				DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */,
+				DA5D92302741053600699555 /* DWTabBar.swift in Sources */,
 				DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */,
+				DA5D9261274159AA00699555 /* UIDevice+DWExtension.m in Sources */,
+				DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */,
 				DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */,
 				DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */,
 			);
@@ -819,6 +944,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 632K45F9F8;
@@ -840,6 +966,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.DatawhaleApp.zyx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DatawhaleApp/Tools/UIComponent/Device/DatawhaleApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -852,6 +980,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 632K45F9F8;
@@ -873,6 +1002,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.DatawhaleApp.zyx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DatawhaleApp/Tools/UIComponent/Device/DatawhaleApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
