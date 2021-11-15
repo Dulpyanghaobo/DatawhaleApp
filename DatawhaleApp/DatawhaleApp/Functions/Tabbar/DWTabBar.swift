@@ -21,7 +21,7 @@ class DWTabBar: UITabBar {
     
     // 设置UI
     func setupView() {
-        let backView = UIView.init(frame: CGRect.init(x: 0, y: -16, width: DWScreenWidth, height: DWSafBottomSpace + 44))
+        let backView = UIView.init(frame: CGRect.init(x: 0, y: -16, width: DWScreenWidth, height: 79))
         insertSubview(backView, at: 0)
         let imageView = UIImageView.init(image: UIImage.init(named: "tabbar_bg"))
         imageView.contentMode = .scaleAspectFill
@@ -36,12 +36,11 @@ class DWTabBar: UITabBar {
         let centerAddWidth = 56
         var itemWidth : Int = 0
         if let count = self.items?.count {
-            itemWidth = (Int(DWScreenWidth) - centerAddWidth) / count
+            itemWidth = (DWScreenWidth - centerAddWidth) / count
         }
 
         let centerAddIndex = 1
         self.centerButton.frame = CGRect.init(x: itemWidth, y: -17, width: centerAddWidth, height: centerAddWidth)
-        
         self.items?.map({
             $0.imageInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: -10, right: 0)
             $0.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.regularFont(9),NSAttributedString.Key.foregroundColor : UIColor.lightGray4()], for: .normal)

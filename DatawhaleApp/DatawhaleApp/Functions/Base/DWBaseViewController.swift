@@ -15,6 +15,7 @@ class DWBaseViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .semibold)]
         modalPresentationStyle = .fullScreen
+        view.backgroundColor = .white
         
     }
     

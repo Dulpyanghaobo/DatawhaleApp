@@ -14,18 +14,11 @@ class DWTabBarController: UITabBarController {
         let homeViewController = DWHomeViewController.init()
         let meViewController = DWMeViewController.init()
         let homeNavigationController = DWNavigationController.init(rootViewController: homeViewController)
-        homeNavigationController.tabBarItem = tabBarItem(title: "home", imageName: "", selectedImageName: "")
-//        navigationController.tabBarItem;
+        homeNavigationController.tabBarItem = tabBarItem(title: "home", imageName: "tabbar_home_icon", selectedImageName: "tabbar_home_select_icon1")
         let meNavigationController = DWNavigationController.init(rootViewController: meViewController)
-        meNavigationController.tabBarItem = tabBarItem(title: "me", imageName: "", selectedImageName: "")
-//        let tabbar =
-
-//        navigationController.tabBarItem;
-//        let navigationController = DWNavigationController.init(rootViewController: <#T##UIViewController#>)
-//        navigationController.tabBarItem;
-        // Do any additional setup after loading the view.
+        meNavigationController.tabBarItem = tabBarItem(title: "me", imageName: "tabbar_me_icon", selectedImageName: "tabbar_me_select_icon1")
         let tabbar = DWTabBar.init()
-        tabbar.unselectedItemTintColor = UIColor.black
+        tabbar.unselectedItemTintColor = UIColor.lightGray4()
 
         self.setValue(tabbar, forKey: "tabBar")
         self.delegate = self
