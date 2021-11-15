@@ -16,7 +16,6 @@ target 'DatawhaleApp' do
     pod 'Kingfisher'
     pod 'URLNavigator'
     pod 'ESPullToRefresh'
-    pod 'JJFloatingActionButton'
 
   target 'DatawhaleAppTests' do
     inherit! :search_paths

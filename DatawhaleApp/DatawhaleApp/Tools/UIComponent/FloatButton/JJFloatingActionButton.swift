@@ -151,7 +151,7 @@ import UIKit
     /// - SeeAlso: `JJButtonAnimationConfiguration`
     /// - SeeAlso: `itemAnimationConfiguration`
     ///
-    public var buttonAnimationConfiguration: JJButtonAnimationConfiguration = .rotation()
+    @objc public var buttonAnimationConfiguration: JJButtonAnimationConfiguration = .rotation()
 
     /// The opening style of the action items.
     /// Default is `JJItemAnimationConfiguration.popUp()`
@@ -159,7 +159,7 @@ import UIKit
     /// - SeeAlso: `JJItemAnimationConfiguration`
     /// - SeeAlso: `buttonAnimationConfiguration`
     ///
-    public var itemAnimationConfiguration: JJItemAnimationConfiguration = .popUp()
+    @objc public var itemAnimationConfiguration: JJItemAnimationConfiguration = .popUp()
 
     /// When enabled and only one action item is added, the floating action button will not open,
     /// but the action from the action item will be executed directly when the button is tapped.
@@ -189,7 +189,7 @@ import UIKit
     ///   - `.closing`
     ///   - `.closed`
     ///
-    @objc public internal(set) var buttonState: JJFloatingActionButtonState = .closed
+    @objc public var buttonState: JJFloatingActionButtonState = .closed
 
     /// The round background view of the floating action button.
     /// Read only.
@@ -236,6 +236,7 @@ import UIKit
         return control
     }()
 
+    
     /// Initializes and returns a newly allocated floating action button object with the specified frame rectangle.
     ///
     /// - Parameter frame: The frame rectangle for the floating action button, measured in points.
@@ -311,9 +312,11 @@ import UIKit
                                     action: ((JJActionItem) -> Void)? = nil) -> JJActionItem {
         let item = JJActionItem()
         item.titleLabel.text = title
+        item.titleLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         item.imageView.image = image
         item.action = action
-        
+        item.titlePosition = .bottom
+        item.imageSize = CGSize(width: 60, height: 60)
         addItem(item)
 
         return item
@@ -445,7 +448,17 @@ fileprivate extension JJFloatingActionButton {
         layer.shadowOffset = CGSize(width: 0, height: 1)
         layer.shadowOpacity = 0.4
         layer.shadowRadius = 2
-
+//        let blurEffect = UIBlurEffect(style: .dr)
+//        let visualEffectView = UIVisualEffectView(effect: blurEffect)
+//
+//        addSubview(visualEffectView)
+//
+//        visualEffectView.snp.makeConstraints{(make) in
+//            make.top.equalToSuperview().offset(0)
+//            make.left.equalToSuperview().offset(0)
+//            make.right.equalToSuperview().offset(0)
+//            make.bottom.equalToSuperview().offset(0)
+//        }
         addSubview(circleView)
         circleView.addSubview(imageView)
 
@@ -531,7 +544,7 @@ fileprivate extension JJFloatingActionButton {
 
 // MARK: - Helper
 
-internal extension JJFloatingActionButton {
+extension JJFloatingActionButton {
     var currentButtonImage: UIImage? {
         if isSingleActionButton, let image = enabledItems.first?.imageView.image {
             return image
@@ -551,8 +564,8 @@ internal extension JJFloatingActionButton {
 
 // MARK: - Actions
 
-fileprivate extension JJFloatingActionButton {
-    @objc func buttonWasTapped() {
+extension JJFloatingActionButton {
+    @objc open func buttonWasTapped() {
         switch buttonState {
         case .open, .opening:
             close()

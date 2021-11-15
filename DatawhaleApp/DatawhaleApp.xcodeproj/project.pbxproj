@@ -31,6 +31,24 @@
 		DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92542741552B00699555 /* DWDeviceDefines.swift */; };
 		DA5D9261274159AA00699555 /* UIDevice+DWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5D9260274159AA00699555 /* UIDevice+DWExtension.m */; };
 		DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D926327415E7100699555 /* UIFont+Extension.swift */; };
+		DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D926527428B7B00699555 /* DWFloatButton.swift */; };
+		DA5D926927428E6600699555 /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D926827428E6600699555 /* DWNavigator.swift */; };
+		DA5D92792742B13900699555 /* JJFloatingActionButton+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D926C2742B13900699555 /* JJFloatingActionButton+Animation.swift */; };
+		DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D926D2742B13900699555 /* UIView+JJFloatingActionButton.swift */; };
+		DA5D927B2742B13900699555 /* JJFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D926E2742B13900699555 /* JJFloatingActionButtonDelegate.swift */; };
+		DA5D927C2742B13900699555 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D926F2742B13900699555 /* Styles.swift */; };
+		DA5D927D2742B13900699555 /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92702742B13900699555 /* AnimationConfiguration.swift */; };
+		DA5D927E2742B13900699555 /* JJActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92712742B13900699555 /* JJActionItem.swift */; };
+		DA5D927F2742B13900699555 /* JJFloatingActionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92722742B13900699555 /* JJFloatingActionButtonState.swift */; };
+		DA5D92802742B13900699555 /* JJActionItemTitlePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92732742B13900699555 /* JJActionItemTitlePosition.swift */; };
+		DA5D92812742B13900699555 /* UIColor+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92742742B13900699555 /* UIColor+JJFloatingActionButton.swift */; };
+		DA5D92822742B13900699555 /* JJFloatingActionButton+Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92752742B13900699555 /* JJFloatingActionButton+Placement.swift */; };
+		DA5D92832742B13900699555 /* LayerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92762742B13900699555 /* LayerProperties.swift */; };
+		DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92772742B13900699555 /* JJFloatingActionButton.swift */; };
+		DA5D92852742B13900699555 /* JJCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92782742B13900699555 /* JJCircleView.swift */; };
+		DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */; };
+		DA5D928C2742BA6600699555 /* DWCustomTitleImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */; };
+		DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */; };
 		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
 		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +107,24 @@
 		DA5D925F274159AA00699555 /* UIDevice+DWExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DWExtension.h"; sourceTree = "<group>"; };
 		DA5D9260274159AA00699555 /* UIDevice+DWExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DWExtension.m"; sourceTree = "<group>"; };
 		DA5D926327415E7100699555 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		DA5D926527428B7B00699555 /* DWFloatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWFloatButton.swift; sourceTree = "<group>"; };
+		DA5D926827428E6600699555 /* DWNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
+		DA5D926C2742B13900699555 /* JJFloatingActionButton+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JJFloatingActionButton+Animation.swift"; sourceTree = "<group>"; };
+		DA5D926D2742B13900699555 /* UIView+JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		DA5D926E2742B13900699555 /* JJFloatingActionButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButtonDelegate.swift; sourceTree = "<group>"; };
+		DA5D926F2742B13900699555 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		DA5D92702742B13900699555 /* AnimationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
+		DA5D92712742B13900699555 /* JJActionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJActionItem.swift; sourceTree = "<group>"; };
+		DA5D92722742B13900699555 /* JJFloatingActionButtonState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButtonState.swift; sourceTree = "<group>"; };
+		DA5D92732742B13900699555 /* JJActionItemTitlePosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJActionItemTitlePosition.swift; sourceTree = "<group>"; };
+		DA5D92742742B13900699555 /* UIColor+JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		DA5D92752742B13900699555 /* JJFloatingActionButton+Placement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JJFloatingActionButton+Placement.swift"; sourceTree = "<group>"; };
+		DA5D92762742B13900699555 /* LayerProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerProperties.swift; sourceTree = "<group>"; };
+		DA5D92772742B13900699555 /* JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButton.swift; sourceTree = "<group>"; };
+		DA5D92782742B13900699555 /* JJCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJCircleView.swift; sourceTree = "<group>"; };
+		DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeBoardCell.swift; sourceTree = "<group>"; };
+		DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCustomTitleImageButton.swift; sourceTree = "<group>"; };
+		DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
 		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,8 +305,9 @@
 		DA5D920827403F9500699555 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DA5D92272741026700699555 /* Presenter */,
 				DA5D92262741026300699555 /* View */,
+				DA5D92272741026700699555 /* Presenter */,
+				DA5D92872742B91000699555 /* Board */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -457,6 +494,7 @@
 			children = (
 				DA5D922427404A9000699555 /* DWTabBarController.swift */,
 				DA5D922F2741053600699555 /* DWTabBar.swift */,
+				DA5D926527428B7B00699555 /* DWFloatButton.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -464,6 +502,10 @@
 		DA5D92312741056400699555 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				DA5D928D2742BB0800699555 /* Layer */,
+				DA5D928A2742BA4500699555 /* Button */,
+				DA5D926B2742B13900699555 /* FloatButton */,
+				DA5D926727428E4B00699555 /* DWNavigator */,
 				DA5D926227415E5F00699555 /* Font */,
 				DA5D9258274155BD00699555 /* Device */,
 				DA5D92512741551D00699555 /* Defines */,
@@ -507,6 +549,58 @@
 				DA5D926327415E7100699555 /* UIFont+Extension.swift */,
 			);
 			name = Font;
+			sourceTree = "<group>";
+		};
+		DA5D926727428E4B00699555 /* DWNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D926827428E6600699555 /* DWNavigator.swift */,
+			);
+			path = DWNavigator;
+			sourceTree = "<group>";
+		};
+		DA5D926B2742B13900699555 /* FloatButton */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D926C2742B13900699555 /* JJFloatingActionButton+Animation.swift */,
+				DA5D926D2742B13900699555 /* UIView+JJFloatingActionButton.swift */,
+				DA5D926E2742B13900699555 /* JJFloatingActionButtonDelegate.swift */,
+				DA5D926F2742B13900699555 /* Styles.swift */,
+				DA5D92702742B13900699555 /* AnimationConfiguration.swift */,
+				DA5D92712742B13900699555 /* JJActionItem.swift */,
+				DA5D92722742B13900699555 /* JJFloatingActionButtonState.swift */,
+				DA5D92732742B13900699555 /* JJActionItemTitlePosition.swift */,
+				DA5D92742742B13900699555 /* UIColor+JJFloatingActionButton.swift */,
+				DA5D92752742B13900699555 /* JJFloatingActionButton+Placement.swift */,
+				DA5D92762742B13900699555 /* LayerProperties.swift */,
+				DA5D92772742B13900699555 /* JJFloatingActionButton.swift */,
+				DA5D92782742B13900699555 /* JJCircleView.swift */,
+			);
+			path = FloatButton;
+			sourceTree = "<group>";
+		};
+		DA5D92872742B91000699555 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		DA5D928A2742BA4500699555 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		DA5D928D2742BB0800699555 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */,
+			);
+			path = Layer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -752,20 +846,38 @@
 				DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */,
 				DA5D92562741552B00699555 /* DWQuoteDefines.swift in Sources */,
 				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
+				DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */,
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
+				DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */,
 				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
+				DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */,
+				DA5D927E2742B13900699555 /* JJActionItem.swift in Sources */,
+				DA5D927D2742B13900699555 /* AnimationConfiguration.swift in Sources */,
+				DA5D92812742B13900699555 /* UIColor+JJFloatingActionButton.swift in Sources */,
+				DA5D92832742B13900699555 /* LayerProperties.swift in Sources */,
 				DA5D922527404A9000699555 /* DWTabBarController.swift in Sources */,
+				DA5D927C2742B13900699555 /* Styles.swift in Sources */,
+				DA5D92852742B13900699555 /* JJCircleView.swift in Sources */,
 				DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */,
 				DA5D91DA274032B200699555 /* DatawhaleApp.xcdatamodeld in Sources */,
 				DA5D92362741067900699555 /* Color+Tone.swift in Sources */,
+				DA5D92792742B13900699555 /* JJFloatingActionButton+Animation.swift in Sources */,
 				DA5D92552741552B00699555 /* DWClouseDefines.swift in Sources */,
 				DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */,
+				DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */,
 				DA5D92302741053600699555 /* DWTabBar.swift in Sources */,
+				DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */,
 				DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */,
+				DA5D927F2742B13900699555 /* JJFloatingActionButtonState.swift in Sources */,
+				DA5D927B2742B13900699555 /* JJFloatingActionButtonDelegate.swift in Sources */,
+				DA5D926927428E6600699555 /* DWNavigator.swift in Sources */,
 				DA5D9261274159AA00699555 /* UIDevice+DWExtension.m in Sources */,
 				DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */,
 				DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */,
+				DA5D92822742B13900699555 /* JJFloatingActionButton+Placement.swift in Sources */,
 				DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */,
+				DA5D928C2742BA6600699555 /* DWCustomTitleImageButton.swift in Sources */,
+				DA5D92802742B13900699555 /* JJActionItemTitlePosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,10 +10,16 @@ import UIKit
 extension UIColor {
     // 品牌蓝
     class func brandBlueColor() -> UIColor {
-        return .colorWithHexStr("398CF4")
+        return .colorWithHexStr("0D67B3")
     }
     /// 浅灰色4 CECECE
     class func lightGray4() -> UIColor {
         return .colorWithHexStr("CECECE")
     }
+    /// 浅灰色6 F8F8FA    背景色
+    class func lightGray6() -> UIColor {
+        return .colorWithHexStr("F8F8FA")
+    }
+    
+
 }

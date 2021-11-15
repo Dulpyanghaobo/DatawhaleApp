@@ -8,11 +8,12 @@
 import UIKit
 import CoreData
 
-class DWTabBar: UITabBar {
+class DWTabBar: UITabBar ,DWFloatButtonActionDelegate{
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
+        self.floatButton.delegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -43,8 +44,8 @@ class DWTabBar: UITabBar {
         self.centerButton.frame = CGRect.init(x: itemWidth, y: -17, width: centerAddWidth, height: centerAddWidth)
         self.items?.map({
             $0.imageInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: -10, right: 0)
-            $0.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.regularFont(9),NSAttributedString.Key.foregroundColor : UIColor.lightGray4()], for: .normal)
-            $0.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.regularFont(9),NSAttributedString.Key.foregroundColor : UIColor.brandBlueColor()], for: .selected)
+            $0.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.regularFont(11),NSAttributedString.Key.foregroundColor : UIColor.lightGray4()], for: .normal)
+            $0.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.regularFont(11),NSAttributedString.Key.foregroundColor : UIColor.brandBlueColor()], for: .selected)
         })
         var tabBarButtonIndex = 0
         self.subviews.map { child in
@@ -76,14 +77,36 @@ class DWTabBar: UITabBar {
     }
     
     @objc func didTapAction() {
-        
+        DWNavigator.keyWindow().addSubview(self.floatButton)
+        self.floatButton.open()
     }
     
-    fileprivate let centerButton : UIButton = {
+    private let centerButton : UIButton = {
         let button = UIButton.init(type: .custom)
         button.setImage(UIImage.init(named: "tabbar_center_button"), for: .normal)
         button.addTarget(self, action: #selector(didTapAction), for: .touchUpInside)
         return button
     } ()
+    
+    private let floatButton : DWFloatButton = {
+        let floatButton = DWFloatButton.init(frame: CGRect.init(x: 0, y: 0, width: DWScreenWidth, height: DWScreenHeight))
+        return floatButton
+    } ()
+}
+
+extension DWTabBar
+{
+    func open() {
+        
+    }
+    
+    func close() {
+        self.floatButton.removeFromSuperview()
+    }
+    
+    func clickItem(openActionType: DWFloatButtonActionType) {
+        
+    }
+    
     
 }

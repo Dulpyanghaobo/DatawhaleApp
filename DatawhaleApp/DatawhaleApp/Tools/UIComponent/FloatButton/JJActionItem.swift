@@ -119,7 +119,7 @@ import UIKit
     @objc open fileprivate(set) lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.isUserInteractionEnabled = false
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         imageView.backgroundColor = .clear
         return imageView
     }()
