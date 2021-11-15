@@ -53,12 +53,15 @@ class DWHomeBoardCell: UICollectionViewCell {
     } ()
     
     private let rightButton : DWCustomTitleImageButton = {
-        let rightButton = DWCustomTitleImageButton.init(frame: CGRect.init(x: 0, y: 0, width: 86, height: 20))
-        let layer = CAGradientLayer.init(colors: [UIColor.colorWithHexStr("0D67B3"),UIColor.colorWithHexStr("238085")], locations: [0.0,1.0], startPoint: CGPoint.init(x: 0.25, y: 0.5), endPoint: CGPoint.init(x: 0.75, y: 0.5), type: CAGradientLayerType.axial)
-        layer.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 0, b: 0.94, c: -0.96, d: 0, tx: 0.98, ty: 0.06))
+        let rightButton = DWCustomTitleImageButton.init(frame: CGRect.init(x: 0, y: 0, width: 86, height: 26))
+        let layer = CAGradientLayer.init(colors: [UIColor.colorWithHexStr("0D67B3"),UIColor.colorWithHexStr("238085")], locations: [0.0,1.0], startPoint: CGPoint.init(x: 0.5, y: 0), endPoint: CGPoint.init(x: 0.5, y: 1), type: CAGradientLayerType.axial)
         layer.position = rightButton.center
-        rightButton.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        let layerBackView = CALayer()
+        layerBackView.backgroundColor = UIColor.black.withAlphaComponent(0.2).cgColor
+        layerBackView.position = rightButton.center
+        layerBackView.bounds = rightButton.bounds
         rightButton.customLayer = layer
+        rightButton.layer.insertSublayer(layerBackView, at: 1)
         rightButton.title = "提醒"
         rightButton.image = "home_remind_cion"
         rightButton.imagePadding = 2
