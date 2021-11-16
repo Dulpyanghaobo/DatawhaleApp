@@ -11,11 +11,10 @@ class DWNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 隐藏navgatorbar细线
-        let navigationBar = navigationController?.navigationBar
-        let navigationBarAppearence = UINavigationBarAppearance.init()
-        navigationBarAppearence.shadowColor = .clear
-        navigationBar?.scrollEdgeAppearance = navigationBarAppearence
+        self.navigationBar.isTranslucent = false
+        // 去掉下边缘线
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationBar.shadowImage = UIImage()
     }
     
     override var childForStatusBarStyle: UIViewController? {
