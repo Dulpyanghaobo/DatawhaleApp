@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		617DB624CD4158B09006EC43 /* Pods_DatawhaleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
+		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
 		DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91CF274032B200699555 /* AppDelegate.swift */; };
 		DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D1274032B200699555 /* SceneDelegate.swift */; };
 		DA5D91D4274032B200699555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D3274032B200699555 /* ViewController.swift */; };
@@ -76,6 +77,7 @@
 		899232B2B170969C2E94492B /* Pods-DatawhaleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleAppTests/Pods-DatawhaleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleApp_DatawhaleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
+		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
 		AF2A42E2AF25CD4E1DEBC754 /* Pods-DatawhaleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.release.xcconfig"; sourceTree = "<group>"; };
 		B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -583,6 +585,7 @@
 			isa = PBXGroup;
 			children = (
 				DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */,
+				AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -876,6 +879,7 @@
 				DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */,
 				DA5D92822742B13900699555 /* JJFloatingActionButton+Placement.swift in Sources */,
 				DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */,
+				AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */,
 				DA5D928C2742BA6600699555 /* DWCustomTitleImageButton.swift in Sources */,
 				DA5D92802742B13900699555 /* JJActionItemTitlePosition.swift in Sources */,
 			);
