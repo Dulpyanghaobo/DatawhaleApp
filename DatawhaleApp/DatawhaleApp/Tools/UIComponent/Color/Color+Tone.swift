@@ -20,6 +20,10 @@ extension UIColor {
     class func lightGray6() -> UIColor {
         return .colorWithHexStr("F8F8FA")
     }
+    /// 暗灰色1 999999 文字颜色
+    class func blackGray1() -> UIColor {
+        return .colorWithHexStr("999999")
+    }
     
 
 }

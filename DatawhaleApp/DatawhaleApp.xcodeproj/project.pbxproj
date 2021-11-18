@@ -10,6 +10,7 @@
 		617DB624CD4158B09006EC43 /* Pods_DatawhaleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
+		DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */; };
 		DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91CF274032B200699555 /* AppDelegate.swift */; };
 		DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D1274032B200699555 /* SceneDelegate.swift */; };
 		DA5D91D4274032B200699555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D3274032B200699555 /* ViewController.swift */; };
@@ -81,6 +82,7 @@
 		AF2A42E2AF25CD4E1DEBC754 /* Pods-DatawhaleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.release.xcconfig"; sourceTree = "<group>"; };
 		B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWLoginViewController.swift; sourceTree = "<group>"; };
 		DA5D91CC274032B200699555 /* DatawhaleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatawhaleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5D91CF274032B200699555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA5D91D1274032B200699555 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,21 @@
 				B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA4E89D32746AFA600FABF97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA4E89D42746AFAB00FABF97 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		DA5D91C3274032B200699555 = {
@@ -341,6 +358,8 @@
 		DA5D920D27403FB500699555 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				DA4E89D42746AFAB00FABF97 /* Presenter */,
+				DA4E89D32746AFA600FABF97 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -851,6 +870,7 @@
 				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
 				DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */,
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
+				DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */,
 				DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */,
 				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
 				DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */,
