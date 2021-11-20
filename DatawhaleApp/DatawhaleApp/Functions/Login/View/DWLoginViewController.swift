@@ -65,7 +65,9 @@ class DWLoginViewController: DWBaseViewController {
     // MARK: - Private
     
     // MARK: - Action
-    
+    @objc func clickLoginAction() {
+        self.navigationController?.popViewController(animated: true)
+    }
     // MARK: - privateUI
     // 手机号区域
     private lazy var problemLabel : UILabel = {
@@ -98,6 +100,7 @@ class DWLoginViewController: DWBaseViewController {
         button.layer.masksToBounds = true
         button.setTitleColor(UIColor.black, for: .normal)
         button.titleLabel?.font = UIFont.meduimFont(16)
+        button.addTarget(self, action: #selector(clickLoginAction), for: .touchUpInside)
         return button
     }()
     

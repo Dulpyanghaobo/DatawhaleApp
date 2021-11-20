@@ -19,7 +19,8 @@ class DWMeViewController: DWBaseViewController {
         view.addSubview(loginButton)
         loginButton.snp.makeConstraints{
             $0.top.equalTo(headView.snp.bottom).offset(64)
-            $0.left.right.equalTo(headView)
+            $0.left.equalToSuperview().offset(32)
+            $0.right.equalToSuperview().offset(-32)
             $0.height.equalTo(44)
         }
     }
