@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import JJFloatingActionButton
 import SnapKit
 
 enum DWFloatButtonActionType {

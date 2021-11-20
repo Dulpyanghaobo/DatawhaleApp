@@ -6,6 +6,8 @@ target 'DatawhaleApp' do
   use_frameworks!
     pod 'Firebase/Analytics'
     pod 'Firebase/Crashlytics'
+    pod 'Firebase/Auth'
+
     #Swift库
     pod 'SnapKit'
     pod 'Hero'
@@ -16,7 +18,6 @@ target 'DatawhaleApp' do
     pod 'Kingfisher'
     pod 'URLNavigator'
     pod 'ESPullToRefresh'
-
   target 'DatawhaleAppTests' do
     inherit! :search_paths
     # Pods for testing

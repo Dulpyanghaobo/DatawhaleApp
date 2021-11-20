@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class DWLoginViewController: DWBaseViewController {
     
@@ -66,7 +67,27 @@ class DWLoginViewController: DWBaseViewController {
     
     // MARK: - Action
     @objc func clickLoginAction() {
-        self.navigationController?.popViewController(animated: true)
+        var provider = OAuthProvider(providerID: "github.com")
+        provider.customParameters = ["allow_signup" : "false"]
+        provider.scopes = ["user:email"]
+        provider.getCredentialWith(nil) { credential, error in
+          if error != nil {
+            // Handle error.
+          }
+            guard let credential = credential else {
+                
+            }
+            Auth.auth().signIn(with: credential) { authResult, error in
+              if error != nil {
+                // Handle error.
+              }
+              // User is signed in.
+              // IdP data available in authResult.additionalUserInfo.profile.
+
+
+            }
+        }
+
     }
     // MARK: - privateUI
     // 手机号区域
