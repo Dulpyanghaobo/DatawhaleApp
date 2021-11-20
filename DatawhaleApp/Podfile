@@ -7,8 +7,7 @@ target 'DatawhaleApp' do
     pod 'Firebase/Analytics'
     pod 'Firebase/Crashlytics'
     pod 'Firebase/Auth'
-
-    #Swift库
+    pod 'WechatOpenSDK'
     pod 'SnapKit'
     pod 'Hero'
     pod 'lottie-ios'

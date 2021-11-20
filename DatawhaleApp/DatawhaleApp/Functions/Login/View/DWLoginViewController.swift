@@ -7,6 +7,8 @@
 
 import UIKit
 import FirebaseAuth
+import AuthenticationServices
+import CryptoKit
 
 class DWLoginViewController: DWBaseViewController {
     
@@ -67,27 +69,64 @@ class DWLoginViewController: DWBaseViewController {
     
     // MARK: - Action
     @objc func clickLoginAction() {
-        var provider = OAuthProvider(providerID: "github.com")
-        provider.customParameters = ["allow_signup" : "false"]
-        provider.scopes = ["user:email"]
-        provider.getCredentialWith(nil) { credential, error in
-          if error != nil {
-            // Handle error.
+        let nonce = randomNonceString()
+        self.currentNonce = nonce
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        let request = appleIDProvider.createRequest()
+        request.requestedScopes = [.fullName, .email]
+        request.nonce = sha256(nonce)
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+        authorizationController.delegate = self
+        authorizationController.presentationContextProvider = self
+        authorizationController.performRequests()
+    }
+    /// 登录加密
+    /// - Parameter length: 长度
+    /// - Returns: 返回值
+    private func randomNonceString(length: Int = 32) -> String {
+      precondition(length > 0)
+      let charset: [Character] =
+        Array("0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._")
+      var result = ""
+      var remainingLength = length
+
+      while remainingLength > 0 {
+        let randoms: [UInt8] = (0 ..< 16).map { _ in
+          var random: UInt8 = 0
+          let errorCode = SecRandomCopyBytes(kSecRandomDefault, 1, &random)
+          if errorCode != errSecSuccess {
+            fatalError(
+              "Unable to generate nonce. SecRandomCopyBytes failed with OSStatus \(errorCode)"
+            )
           }
-            guard let credential = credential else {
-                
-            }
-            Auth.auth().signIn(with: credential) { authResult, error in
-              if error != nil {
-                // Handle error.
-              }
-              // User is signed in.
-              // IdP data available in authResult.additionalUserInfo.profile.
-
-
-            }
+          return random
         }
 
+        randoms.forEach { random in
+          if remainingLength == 0 {
+            return
+          }
+
+          if random < charset.count {
+            result.append(charset[Int(random)])
+            remainingLength -= 1
+          }
+        }
+      }
+
+      return result
+    }
+    
+    private var currentNonce : String = ""
+    
+    private func sha256(_ input: String) -> String {
+      let inputData = Data(input.utf8)
+      let hashedData = SHA256.hash(data: inputData)
+      let hashString = hashedData.compactMap {
+        String(format: "%02x", $0)
+      }.joined()
+
+      return hashString
     }
     // MARK: - privateUI
     // 手机号区域
@@ -169,4 +208,40 @@ class DWLoginViewController: DWBaseViewController {
         return imageView
     }()
     
+}
+
+extension DWLoginViewController : ASAuthorizationControllerDelegate, ASAuthorizationControllerPresentationContextProviding
+{
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return view.window!
+    }
+    
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+        
+    }
+  
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        guard let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential
+        else {
+          print("Unable to retrieve AppleIDCredential")
+          return
+        }
+        guard let appleIDToken = appleIDCredential.identityToken else {
+          print("Unable to fetch identity token")
+          return
+        }
+        guard let idTokenString = String(data: appleIDToken, encoding: .utf8) else {
+          print("Unable to serialize token string from data: \(appleIDToken.debugDescription)")
+          return
+        }
+
+        let credential = OAuthProvider.credential(withProviderID: "apple.com",
+                                                  idToken: idTokenString,
+                                                  rawNonce: self.currentNonce)
+
+        Auth.auth().signIn(with: credential) { result, error in
+
+
+        }
+    }
 }

@@ -179,6 +179,11 @@
 			<key>orderHint</key>
 			<integer>26</integer>
 		</dict>
+		<key>WechatOpenSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>lottie-ios.xcscheme</key>
 		<dict>
 			<key>isShown</key>

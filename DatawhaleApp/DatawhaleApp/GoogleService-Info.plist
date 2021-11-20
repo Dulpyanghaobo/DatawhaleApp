@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>901697458962-ffes4dilf2lpaeiv7meaiptnev5obpkj.apps.googleusercontent.com</string>
+	<string>901697458962-p4g6u1v9mrh8ba15l687850du418lfvd.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.901697458962-ffes4dilf2lpaeiv7meaiptnev5obpkj</string>
+	<string>com.googleusercontent.apps.901697458962-p4g6u1v9mrh8ba15l687850du418lfvd</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDTTcyeBwAfKZxzvRSxCgT1n4nrE1sSATA</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.dulpyhb.DatawhaleApp.zyx</string>
+	<string>com.dulpyhb.DatawhaleApp.zyx.x</string>
 	<key>PROJECT_ID</key>
 	<string>datawhale-47d38</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:901697458962:ios:29369024bdde07d9edd9cb</string>
+	<string>1:901697458962:ios:d4fc92d734ea516fedd9cb</string>
 </dict>
 </plist>

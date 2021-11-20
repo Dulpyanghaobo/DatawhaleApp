@@ -51,7 +51,7 @@
 		DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */; };
 		DA5D928C2742BA6600699555 /* DWCustomTitleImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */; };
 		DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */; };
-		DAD408A5274969AC008C04AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD408A4274969AC008C04AE /* GoogleService-Info.plist */; };
+		DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD408A927498D04008C04AE /* GoogleService-Info.plist */; };
 		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
 		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -130,8 +130,8 @@
 		DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeBoardCell.swift; sourceTree = "<group>"; };
 		DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCustomTitleImageButton.swift; sourceTree = "<group>"; };
 		DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
-		DAD408A4274969AC008C04AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DAD408A62749760C008C04AE /* DatawhaleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatawhaleApp.entitlements; sourceTree = "<group>"; };
+		DAD408A927498D04008C04AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,7 +227,7 @@
 		DA5D91CE274032B200699555 /* DatawhaleApp */ = {
 			isa = PBXGroup;
 			children = (
-				DAD408A4274969AC008C04AE /* GoogleService-Info.plist */,
+				DAD408A927498D04008C04AE /* GoogleService-Info.plist */,
 				DAD408A62749760C008C04AE /* DatawhaleApp.entitlements */,
 				DA5D920227403B8900699555 /* AppDelegate */,
 				DA5D920327403B9800699555 /* Functions */,
@@ -741,8 +741,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5D91DF274032B400699555 /* LaunchScreen.storyboard in Resources */,
-				DAD408A5274969AC008C04AE /* GoogleService-Info.plist in Resources */,
 				DA5D91DC274032B400699555 /* Assets.xcassets in Resources */,
+				DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */,
 				DA5D91D7274032B200699555 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1106,7 +1106,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.DatawhaleApp.xyz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.DatawhaleApp.zyx.x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "DatawhaleApp/Tools/UIComponent/Device/DatawhaleApp-Bridging-Header.h";
@@ -1143,7 +1143,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.DatawhaleApp.xyz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.DatawhaleApp.zyx.x;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "DatawhaleApp/Tools/UIComponent/Device/DatawhaleApp-Bridging-Header.h";

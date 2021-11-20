@@ -112,6 +112,7 @@ PODS:
   - SwiftDate (6.3.1)
   - SwiftyJSON (5.0.1)
   - URLNavigator (2.3.0)
+  - WechatOpenSDK (1.8.7.1)
 
 DEPENDENCIES:
   - ESPullToRefresh
@@ -126,6 +127,7 @@ DEPENDENCIES:
   - SwiftDate
   - SwiftyJSON
   - URLNavigator
+  - WechatOpenSDK
 
 SPEC REPOS:
   trunk:
@@ -152,6 +154,7 @@ SPEC REPOS:
     - SwiftDate
     - SwiftyJSON
     - URLNavigator
+    - WechatOpenSDK
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
@@ -177,7 +180,8 @@ SPEC CHECKSUMS:
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
+  WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
 
-PODFILE CHECKSUM: 0f485324076f077fbd4241fbc166ecf872d9ec0a
+PODFILE CHECKSUM: ef41ee9ad5ca8c6be6074c3e536351b44b2d0847
 
 COCOAPODS: 1.11.2
