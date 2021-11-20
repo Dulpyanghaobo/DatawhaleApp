@@ -12,6 +12,10 @@ class DWMeViewController: DWBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(headView)
+        headView.snp.makeConstraints{
+            $0.top.right.left.equalToSuperview().offset(0)
+            $0.height.equalTo(324)
+        }
         view.addSubview(loginButton)
         loginButton.snp.makeConstraints{
             $0.top.equalTo(headView.snp.bottom).offset(64)
@@ -19,7 +23,10 @@ class DWMeViewController: DWBaseViewController {
             $0.height.equalTo(44)
         }
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     // MARK: -
     @objc func didTapLogin() {
         let loginViewController = DWLoginViewController.init()
@@ -28,7 +35,7 @@ class DWMeViewController: DWBaseViewController {
     }
     
     private lazy var headView : UIView = {
-        var headView = UIView.init(frame: CGRect.init(x: (UIScreen.main.bounds.size.width - 200) / 2, y: (UIScreen.main.bounds.size.height - 200) / 2, width: 200, height: 200))
+        var headView = UIView.init(frame: .zero)
         headView.backgroundColor = .red
         return headView
     } ()
