@@ -4,136 +4,88 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme_^#shared#^_</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>20</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>ESPullToRefresh-ESPullToRefresh.xcscheme_^#shared#^_</key>
+		<key>ESPullToRefresh-ESPullToRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>ESPullToRefresh.xcscheme_^#shared#^_</key>
+		<key>ESPullToRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Firebase.xcscheme_^#shared#^_</key>
+		<key>Hero.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>19</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>FirebaseAnalytics.xcscheme_^#shared#^_</key>
+		<key>JCore.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>22</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>FirebaseCore.xcscheme_^#shared#^_</key>
+		<key>JPush.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>FirebaseCoreDiagnostics.xcscheme_^#shared#^_</key>
+		<key>Moya.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>FirebaseCrashlytics.xcscheme_^#shared#^_</key>
+		<key>Pods-DatawhaleApp-DatawhaleAppUITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>FirebaseInstallations.xcscheme_^#shared#^_</key>
+		<key>Pods-DatawhaleApp.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>26</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>GoogleAppMeasurement.xcscheme_^#shared#^_</key>
+		<key>Pods-DatawhaleAppTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>GoogleDataTransport.xcscheme_^#shared#^_</key>
+		<key>SnapKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>GoogleUtilities.xcscheme_^#shared#^_</key>
+		<key>SwiftDate.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Hero.xcscheme_^#shared#^_</key>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>25</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>JJFloatingActionButton.xcscheme_^#shared#^_</key>
+		<key>URLNavigator.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Kingfisher.xcscheme_^#shared#^_</key>
+		<key>WechatOpenSDK.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Moya.xcscheme_^#shared#^_</key>
+		<key>lottie-ios.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>Pods-DatawhaleApp-DatawhaleAppUITests.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
-		</dict>
-		<key>Pods-DatawhaleApp.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>Pods-DatawhaleAppTests.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>23</integer>
-		</dict>
-		<key>PromisesObjC.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>24</integer>
-		</dict>
-		<key>SnapKit.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>SwiftDate.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
-		</dict>
-		<key>SwiftyJSON.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
-		<key>URLNavigator.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-		<key>lottie-ios.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>18</integer>
-		</dict>
-		<key>nanopb.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

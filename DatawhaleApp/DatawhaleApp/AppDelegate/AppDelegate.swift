@@ -7,14 +7,17 @@
 
 import UIKit
 import CoreData
-import Firebase
+//import Firebase
 import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
+        // 添加firebaseApp
+//        FirebaseApp.configure()
+        
+        // 通知功能
         UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .sound, .alert]) { granted, _ in
             guard granted else { return }
             DispatchQueue.main.async {

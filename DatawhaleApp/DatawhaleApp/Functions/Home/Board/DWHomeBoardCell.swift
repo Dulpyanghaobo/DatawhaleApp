@@ -24,6 +24,7 @@ class DWHomeBoardCell: UICollectionViewCell {
         contentView.layer.cornerRadius = 16
         contentView.addSubview(rightButton)
         contentView.addSubview(leftLabel)
+        contentView.addSubview(progressView)
         p_addMasonry()
     }
     func p_addMasonry() {
@@ -35,6 +36,11 @@ class DWHomeBoardCell: UICollectionViewCell {
         leftLabel.snp.makeConstraints{(make) in
             make.left.top.equalToSuperview().offset(24)
             make.right.lessThanOrEqualTo(rightButton.snp.left).offset(-55)
+        }
+        progressView.snp.makeConstraints{
+            $0.top.equalTo(leftLabel.snp.bottom).offset(12)
+            $0.left.equalTo(leftLabel)
+            $0.size.equalTo(CGSize(width: 84, height: 84))
         }
     }
     func p_setUpData() {
@@ -66,6 +72,12 @@ class DWHomeBoardCell: UICollectionViewCell {
         rightButton.image = "home_remind_cion"
         rightButton.imagePadding = 2
         return rightButton
+    } ()
+    
+    private lazy var progressView : UIProgressView = {
+        let progressView = UIProgressView.init(progressViewStyle: UIProgressView.Style.bar)
+        progressView.progress = 0.4
+        return progressView
     } ()
 }
 

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		617DB624CD4158B09006EC43 /* Pods_DatawhaleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */; };
+		AA3CDEE1274B6B5700670C1D /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CDEE0274B6B5700670C1D /* ExternalAccessory.framework */; };
+		AA3CDEE4274B8B7C00670C1D /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CDEE3274B8B7C00670C1D /* CircleProgressView.swift */; };
+		AA3CDEE7274BAC3500670C1D /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CDEE6274BAC3500670C1D /* Operator.swift */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
 		DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */; };
@@ -78,6 +81,9 @@
 		56A5C9C6C9CBDE6A270C2404 /* Pods-DatawhaleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleAppTests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleAppTests/Pods-DatawhaleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		899232B2B170969C2E94492B /* Pods-DatawhaleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleAppTests/Pods-DatawhaleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleApp_DatawhaleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3CDEE0274B6B5700670C1D /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		AA3CDEE3274B8B7C00670C1D /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
+		AA3CDEE6274BAC3500670C1D /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
 		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
 		AF2A42E2AF25CD4E1DEBC754 /* Pods-DatawhaleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3CDEE1274B6B5700670C1D /* ExternalAccessory.framework in Frameworks */,
 				DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,11 +187,28 @@
 		A55047F058B5753B49BFA92F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA3CDEE0274B6B5700670C1D /* ExternalAccessory.framework */,
 				B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */,
 				93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */,
 				B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA3CDEE2274B8B5900670C1D /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				AA3CDEE3274B8B7C00670C1D /* CircleProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		AA3CDEE5274BAC2300670C1D /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				AA3CDEE6274BAC3500670C1D /* Operator.swift */,
+			);
+			path = Operator;
 			sourceTree = "<group>";
 		};
 		DA4E89D32746AFA600FABF97 /* View */ = {
@@ -300,6 +324,7 @@
 		DA5D920427403BAD00699555 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				AA3CDEE5274BAC2300670C1D /* Operator */,
 				DA5D92312741056400699555 /* UIComponent */,
 			);
 			path = Tools;
@@ -528,6 +553,7 @@
 		DA5D92312741056400699555 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
+				AA3CDEE2274B8B5900670C1D /* ProgressView */,
 				DA5D928D2742BB0800699555 /* Layer */,
 				DA5D928A2742BA4500699555 /* Button */,
 				DA5D926B2742B13900699555 /* FloatButton */,
@@ -899,9 +925,11 @@
 				DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */,
 				DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */,
 				DA5D927F2742B13900699555 /* JJFloatingActionButtonState.swift in Sources */,
+				AA3CDEE7274BAC3500670C1D /* Operator.swift in Sources */,
 				DA5D927B2742B13900699555 /* JJFloatingActionButtonDelegate.swift in Sources */,
 				DA5D9261274159AA00699555 /* UIDevice+DWExtension.m in Sources */,
 				DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */,
+				AA3CDEE4274B8B7C00670C1D /* CircleProgressView.swift in Sources */,
 				DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */,
 				DA5D92822742B13900699555 /* JJFloatingActionButton+Placement.swift in Sources */,
 				DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */,
@@ -1090,7 +1118,7 @@
 				CODE_SIGN_ENTITLEMENTS = DatawhaleApp/DatawhaleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AYQTA2673R;
+				DEVELOPMENT_TEAM = ZR65RQ5GJR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DatawhaleApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DatewhaleApp;
@@ -1106,7 +1134,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.DatawhaleApp.zyx.x;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.Datawhale.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "DatawhaleApp/Tools/UIComponent/Device/DatawhaleApp-Bridging-Header.h";
@@ -1127,7 +1155,7 @@
 				CODE_SIGN_ENTITLEMENTS = DatawhaleApp/DatawhaleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AYQTA2673R;
+				DEVELOPMENT_TEAM = ZR65RQ5GJR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DatawhaleApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DatewhaleApp;
@@ -1143,7 +1171,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.DatawhaleApp.zyx.x;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dulpyhb.Datawhale.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "DatawhaleApp/Tools/UIComponent/Device/DatawhaleApp-Bridging-Header.h";

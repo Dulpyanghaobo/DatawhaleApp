@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FirebaseAuth
+//import FirebaseAuth
 import AuthenticationServices
 import CryptoKit
 
@@ -234,14 +234,14 @@ extension DWLoginViewController : ASAuthorizationControllerDelegate, ASAuthoriza
           print("Unable to serialize token string from data: \(appleIDToken.debugDescription)")
           return
         }
-
-        let credential = OAuthProvider.credential(withProviderID: "apple.com",
-                                                  idToken: idTokenString,
-                                                  rawNonce: self.currentNonce)
-
-        Auth.auth().signIn(with: credential) { result, error in
-
-
-        }
+//
+//        let credential = OAuthProvider.credential(withProviderID: "apple.com",
+//                                                  idToken: idTokenString,
+//                                                  rawNonce: self.currentNonce)
+//
+//        Auth.auth().signIn(with: credential) { result, error in
+//
+//
+//        }
     }
 }
