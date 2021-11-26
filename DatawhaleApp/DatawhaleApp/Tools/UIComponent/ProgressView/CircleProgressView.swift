@@ -23,15 +23,15 @@ class CircleProgressView: UIView {
         pathBackColor = UIColor.white.withAlphaComponent(0.2)
         pathFillColor = UIColor.white
         strokeWidth = 4
-        startAngle = HFSCircleDegree(0)
-        reduceAngle = HFSCircleDegree(0)
+//        startAngle = HFSCircleDegree(0)
+//        reduceAngle = HFSCircleDegree(0)
         duration = 0.5
         realWidth = frame.size.width
         radius = realWidth / 2.0 - strokeWidth / 2.0
 
-        layer.addSublayer(backLayer)
-        layer.addSublayer(progressLayer)
-        addSubview(pointImageView)
+//        layer.addSublayer(backLayer)
+//        layer.addSublayer(progressLayer)
+//        addSubview(pointImageView)
     }
     
     /// 线条背景色

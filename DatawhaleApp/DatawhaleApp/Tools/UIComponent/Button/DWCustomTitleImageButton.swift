@@ -6,11 +6,10 @@
 //
 
 import UIKit
-enum HFSCustomTitleImageButtonType : Int {
-    case left
-    case right
-    case top
-    case bottom
+enum HFSCustomTitleIamgeType : Int {
+    case ImageTextMerge //!< 文字图片合并
+    case ImageFixed //!< 固定图片位置
+    case TextFixed //!< 文字固定
 }
 
 enum HFSCustomTitleImageAlignType : Int {
@@ -25,18 +24,41 @@ protocol HFSCustomTitleImageButtonOutputProtocol : NSObjectProtocol{
 }
 
 class DWCustomTitleImageButton: UIView {
-    
-    
+
     weak var outputDelegate : HFSCustomTitleImageButtonOutputProtocol?
+    
+    public var type : HFSCustomTitleIamgeType = .ImageTextMerge {
+        didSet {
+            switch type {
+            case .ImageFixed:
+                break
+            case .TextFixed:
+                break
+            case .ImageTextMerge:
+                break
+            }
+        }
+    }
     
     public var alignType : HFSCustomTitleImageAlignType = .BottomAlign {
         didSet {
             self.imageView.snp.removeConstraints()
-            self.imageView.snp.makeConstraints { make in
-                make.left.equalTo(titleLabel.snp.right).offset(6)
-                make.right.equalToSuperview().offset(-10)
-                make.bottom.equalTo(self.titleLabel.snp.bottom)
+            switch alignType {
+            case .BottomAlign:
+                break
+            case .LeftAlign:
+                self.imageView.snp.makeConstraints { make in
+                    make.left.equalTo(titleLabel.snp.right).offset(6)
+                    make.right.equalToSuperview().offset(-10)
+                    make.bottom.equalTo(self.titleLabel.snp.bottom)
+                }
+                break
+            case .TopAlign:
+                break
+            case .RightAlign:
+                break
             }
+
         }
     }
     // 文字标题
@@ -48,8 +70,27 @@ class DWCustomTitleImageButton: UIView {
     // 图片与文字距离
     public var imagePadding : CGFloat = 4 {
         didSet {
-            imageView.snp.updateConstraints { make in
-                make.left.equalTo(self.titleLabel.snp.right).offset(imagePadding)
+            switch alignType {
+            case .BottomAlign:
+                imageView.snp.updateConstraints { make in
+                    make.top.equalTo(self.titleLabel.snp.bottom).offset(imagePadding)
+                }
+                break
+            case .LeftAlign:
+                imageView.snp.updateConstraints { make in
+                    make.left.equalTo(self.titleLabel.snp.right).offset(imagePadding)
+                }
+                break
+            case .TopAlign:
+                imageView.snp.updateConstraints { make in
+                    make.bottom.equalTo(self.titleLabel.snp.top).offset(imagePadding)
+                }
+                break
+            case .RightAlign:
+                imageView.snp.updateConstraints { make in
+                    make.left.equalTo(self.titleLabel.snp.right).offset(imagePadding)
+                }
+                break
             }
         }
     }
@@ -59,6 +100,7 @@ class DWCustomTitleImageButton: UIView {
             self.titleLabel.textColor = textColor
         }
     }
+    
     // 图片url
     public var image : String = "" {
         didSet {

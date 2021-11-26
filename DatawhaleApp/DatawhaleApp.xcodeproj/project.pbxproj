@@ -11,6 +11,7 @@
 		AA3CDEE1274B6B5700670C1D /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CDEE0274B6B5700670C1D /* ExternalAccessory.framework */; };
 		AA3CDEE4274B8B7C00670C1D /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CDEE3274B8B7C00670C1D /* CircleProgressView.swift */; };
 		AA3CDEE7274BAC3500670C1D /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CDEE6274BAC3500670C1D /* Operator.swift */; };
+		AAB081652750EE5D0086EE92 /* DWAnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
 		DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */; };
@@ -84,6 +85,7 @@
 		AA3CDEE0274B6B5700670C1D /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		AA3CDEE3274B8B7C00670C1D /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		AA3CDEE6274BAC3500670C1D /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWAnimationButton.swift; sourceTree = "<group>"; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
 		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
 		AF2A42E2AF25CD4E1DEBC754 /* Pods-DatawhaleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -644,6 +646,7 @@
 			isa = PBXGroup;
 			children = (
 				DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */,
+				AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -906,6 +909,7 @@
 				DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */,
 				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
 				DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */,
+				AAB081652750EE5D0086EE92 /* DWAnimationButton.swift in Sources */,
 				DA5D927E2742B13900699555 /* JJActionItem.swift in Sources */,
 				DA5D927D2742B13900699555 /* AnimationConfiguration.swift in Sources */,
 				DA5D92812742B13900699555 /* UIColor+JJFloatingActionButton.swift in Sources */,
