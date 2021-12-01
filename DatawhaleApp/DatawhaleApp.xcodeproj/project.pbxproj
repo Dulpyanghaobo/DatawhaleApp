@@ -55,6 +55,12 @@
 		DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */; };
 		DA5D928C2742BA6600699555 /* DWCustomTitleImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */; };
 		DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */; };
+		DA63109D275519CC005CACD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63109C275519CC005CACD7 /* User.swift */; };
+		DA6310A427552FE2005CACD7 /* APILogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310A327552FE2005CACD7 /* APILogin.swift */; };
+		DA6310A727553087005CACD7 /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310A627553087005CACD7 /* APIUser.swift */; };
+		DA6310AA275530DA005CACD7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310A9275530DA005CACD7 /* API.swift */; };
+		DA6310AC2755310B005CACD7 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310AB2755310B005CACD7 /* MoyaConfig.swift */; };
+		DA6310AE2755315E005CACD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310AD2755315E005CACD7 /* NetworkManager.swift */; };
 		DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD408A927498D04008C04AE /* GoogleService-Info.plist */; };
 		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
 		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
@@ -138,6 +144,12 @@
 		DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeBoardCell.swift; sourceTree = "<group>"; };
 		DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCustomTitleImageButton.swift; sourceTree = "<group>"; };
 		DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
+		DA63109C275519CC005CACD7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DA6310A327552FE2005CACD7 /* APILogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogin.swift; sourceTree = "<group>"; };
+		DA6310A627553087005CACD7 /* APIUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
+		DA6310A9275530DA005CACD7 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		DA6310AB2755310B005CACD7 /* MoyaConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
+		DA6310AD2755315E005CACD7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DAD408A62749760C008C04AE /* DatawhaleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatawhaleApp.entitlements; sourceTree = "<group>"; };
 		DAD408A927498D04008C04AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,8 +270,9 @@
 				DA5D920227403B8900699555 /* AppDelegate */,
 				DA5D920327403B9800699555 /* Functions */,
 				DA5D920427403BAD00699555 /* Tools */,
-				DA5D921D2740437C00699555 /* Networking */,
 				DA5D921C2740436E00699555 /* Domain */,
+				DA6310A52755305F005CACD7 /* Data */,
+				DA6310A127552FB2005CACD7 /* Infrastructure */,
 				DA5D920527403BBB00699555 /* Repackage */,
 				DA5D920627403BC600699555 /* Support Files */,
 				DA5D920727403BCE00699555 /* OtherResources */,
@@ -492,6 +505,7 @@
 		DA5D921C2740436E00699555 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				DA63109B275519BD005CACD7 /* Model */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -499,6 +513,7 @@
 		DA5D921D2740437C00699555 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DA6310A027552F6D005CACD7 /* Login */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -657,6 +672,49 @@
 				DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */,
 			);
 			path = Layer;
+			sourceTree = "<group>";
+		};
+		DA63109B275519BD005CACD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA63109C275519CC005CACD7 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA6310A027552F6D005CACD7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DA6310A327552FE2005CACD7 /* APILogin.swift */,
+				DA6310A627553087005CACD7 /* APIUser.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DA6310A127552FB2005CACD7 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				DA6310A8275530CE005CACD7 /* Networking */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		DA6310A52755305F005CACD7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DA5D921D2740437C00699555 /* Networking */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DA6310A8275530CE005CACD7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DA6310A9275530DA005CACD7 /* API.swift */,
+				DA6310AB2755310B005CACD7 /* MoyaConfig.swift */,
+				DA6310AD2755315E005CACD7 /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -907,11 +965,14 @@
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
 				DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */,
 				DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */,
+				DA6310AC2755310B005CACD7 /* MoyaConfig.swift in Sources */,
+				DA6310A727553087005CACD7 /* APIUser.swift in Sources */,
 				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
 				DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */,
 				AAB081652750EE5D0086EE92 /* DWAnimationButton.swift in Sources */,
 				DA5D927E2742B13900699555 /* JJActionItem.swift in Sources */,
 				DA5D927D2742B13900699555 /* AnimationConfiguration.swift in Sources */,
+				DA6310AA275530DA005CACD7 /* API.swift in Sources */,
 				DA5D92812742B13900699555 /* UIColor+JJFloatingActionButton.swift in Sources */,
 				DA5D92832742B13900699555 /* LayerProperties.swift in Sources */,
 				DA5D922527404A9000699555 /* DWTabBarController.swift in Sources */,
@@ -925,12 +986,15 @@
 				DA5D92552741552B00699555 /* DWClouseDefines.swift in Sources */,
 				DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */,
 				DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */,
+				DA6310AE2755315E005CACD7 /* NetworkManager.swift in Sources */,
 				DA5D92302741053600699555 /* DWTabBar.swift in Sources */,
 				DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */,
 				DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */,
 				DA5D927F2742B13900699555 /* JJFloatingActionButtonState.swift in Sources */,
+				DA63109D275519CC005CACD7 /* User.swift in Sources */,
 				AA3CDEE7274BAC3500670C1D /* Operator.swift in Sources */,
 				DA5D927B2742B13900699555 /* JJFloatingActionButtonDelegate.swift in Sources */,
+				DA6310A427552FE2005CACD7 /* APILogin.swift in Sources */,
 				DA5D9261274159AA00699555 /* UIDevice+DWExtension.m in Sources */,
 				DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */,
 				AA3CDEE4274B8B7C00670C1D /* CircleProgressView.swift in Sources */,

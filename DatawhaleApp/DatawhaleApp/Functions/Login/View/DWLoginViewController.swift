@@ -69,16 +69,22 @@ class DWLoginViewController: DWBaseViewController {
     
     // MARK: - Action
     @objc func clickLoginAction() {
-        let nonce = randomNonceString()
-        self.currentNonce = nonce
-        let appleIDProvider = ASAuthorizationAppleIDProvider()
-        let request = appleIDProvider.createRequest()
-        request.requestedScopes = [.fullName, .email]
-        request.nonce = sha256(nonce)
-        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
-        authorizationController.delegate = self
-        authorizationController.presentationContextProvider = self
-        authorizationController.performRequests()
+
+        NetWorkRequest(APILogin.login(user: ["Id":"4","name":"adsdas","password":"ddem"]), needShowFailAlert: true, modelType: [User].self, successCallback: { _,_ in
+            print("deimdemde")
+        }, failureCallback: { model in
+            print("deimdemde\(model)")
+        })
+        //        let nonce = randomNonceString()
+//        self.currentNonce = nonce
+//        let appleIDProvider = ASAuthorizationAppleIDProvider()
+//        let request = appleIDProvider.createRequest()
+//        request.requestedScopes = [.fullName, .email]
+//        request.nonce = sha256(nonce)
+//        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+//        authorizationController.delegate = self
+//        authorizationController.presentationContextProvider = self
+//        authorizationController.performRequests()
     }
     /// 登录加密
     /// - Parameter length: 长度

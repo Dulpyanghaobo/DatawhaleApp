@@ -4,18 +4,19 @@
 target 'DatawhaleApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-#    pod 'Firebase/Analytics'
-#    pod 'Firebase/Crashlytics'
-    pod 'WechatOpenSDK'
-    pod 'JPush'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Crashlytics'
     pod 'SnapKit'
     pod 'Hero'
     pod 'lottie-ios'
     pod 'Moya/Combine'
+    pod 'Moya'
     pod 'SwiftyJSON'
+    pod 'ObjectMapper'
     pod 'SwiftDate'
     pod 'URLNavigator'
     pod 'ESPullToRefresh'
+    pod 'ReSwift'
   target 'DatawhaleAppTests' do
     inherit! :search_paths
     # Pods for testing
