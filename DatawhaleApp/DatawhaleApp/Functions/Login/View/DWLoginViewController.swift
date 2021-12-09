@@ -70,11 +70,11 @@ class DWLoginViewController: DWBaseViewController {
     // MARK: - Action
     @objc func clickLoginAction() {
 
-        NetWorkRequest(APILogin.login(user: ["Id":"4","name":"adsdas","password":"ddem"]), needShowFailAlert: true, modelType: [User].self, successCallback: { _,_ in
-            print("deimdemde")
-        }, failureCallback: { model in
-            print("deimdemde\(model)")
-        })
+//        NetWorkRequest(APILogin.login(user: ["Id":"4","name":"adsdas","password":"ddem"]), needShowFailAlert: true, modelType: [User].self, successCallback: { _,_ in
+//            print("deimdemde")
+//        }, failureCallback: { model in
+//            print("deimdemde\(model)")
+//        })
         //        let nonce = randomNonceString()
 //        self.currentNonce = nonce
 //        let appleIDProvider = ASAuthorizationAppleIDProvider()

@@ -105,7 +105,8 @@ extension DWTabBar
     }
     
     func clickItem(openActionType: DWFloatButtonActionType) {
-        
+        let cameraViewController = DWCameraViewController.init()
+        DWNavigator.currentController().navigationController?.pushViewController(cameraViewController, animated: true)
     }
     
     

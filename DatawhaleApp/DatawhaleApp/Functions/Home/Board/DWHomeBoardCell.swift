@@ -70,6 +70,7 @@ class DWHomeBoardCell: UICollectionViewCell {
         rightButton.layer.insertSublayer(layerBackView, at: 1)
         rightButton.title = "提醒"
         rightButton.image = "home_remind_cion"
+        rightButton.alignType = .RightAlign
         rightButton.imagePadding = 2
         return rightButton
     } ()

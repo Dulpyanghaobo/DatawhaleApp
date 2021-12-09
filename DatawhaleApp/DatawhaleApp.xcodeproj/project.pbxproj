@@ -15,6 +15,7 @@
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
 		DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */; };
+		DA560C73276258BA001B7327 /* DWCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA560C72276258BA001B7327 /* DWCameraViewModel.swift */; };
 		DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91CF274032B200699555 /* AppDelegate.swift */; };
 		DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D1274032B200699555 /* SceneDelegate.swift */; };
 		DA5D91D4274032B200699555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D3274032B200699555 /* ViewController.swift */; };
@@ -55,6 +56,9 @@
 		DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */; };
 		DA5D928C2742BA6600699555 /* DWCustomTitleImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */; };
 		DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */; };
+		DA5E20D927623736009F6FD8 /* DWCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E20D827623736009F6FD8 /* DWCameraViewController.swift */; };
+		DA5E20DB27623815009F6FD8 /* DWCameraBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E20DA27623815009F6FD8 /* DWCameraBottomView.swift */; };
+		DA5E20DE27623F78009F6FD8 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E20DD27623F78009F6FD8 /* CameraManager.swift */; };
 		DA63109D275519CC005CACD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63109C275519CC005CACD7 /* User.swift */; };
 		DA6310A427552FE2005CACD7 /* APILogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310A327552FE2005CACD7 /* APILogin.swift */; };
 		DA6310A727553087005CACD7 /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310A627553087005CACD7 /* APIUser.swift */; };
@@ -98,6 +102,7 @@
 		B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWLoginViewController.swift; sourceTree = "<group>"; };
+		DA560C72276258BA001B7327 /* DWCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCameraViewModel.swift; sourceTree = "<group>"; };
 		DA5D91CC274032B200699555 /* DatawhaleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatawhaleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5D91CF274032B200699555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA5D91D1274032B200699555 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +149,9 @@
 		DA5D92882742B93B00699555 /* DWHomeBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeBoardCell.swift; sourceTree = "<group>"; };
 		DA5D928B2742BA6600699555 /* DWCustomTitleImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCustomTitleImageButton.swift; sourceTree = "<group>"; };
 		DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
+		DA5E20D827623736009F6FD8 /* DWCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCameraViewController.swift; sourceTree = "<group>"; };
+		DA5E20DA27623815009F6FD8 /* DWCameraBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCameraBottomView.swift; sourceTree = "<group>"; };
+		DA5E20DD27623F78009F6FD8 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		DA63109C275519CC005CACD7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DA6310A327552FE2005CACD7 /* APILogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogin.swift; sourceTree = "<group>"; };
 		DA6310A627553087005CACD7 /* APIUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
@@ -389,6 +397,9 @@
 		DA5D920A27403FA300699555 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				DA5E20D727623662009F6FD8 /* ViewController */,
+				DA5E20D62762365C009F6FD8 /* ViewModel */,
+				DA5E20D527623655009F6FD8 /* View */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -674,6 +685,38 @@
 			path = Layer;
 			sourceTree = "<group>";
 		};
+		DA5E20D527623655009F6FD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E20DA27623815009F6FD8 /* DWCameraBottomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA5E20D62762365C009F6FD8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA560C72276258BA001B7327 /* DWCameraViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA5E20D727623662009F6FD8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E20D827623736009F6FD8 /* DWCameraViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DA5E20DC27623F63009F6FD8 /* CameraManager */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E20DD27623F78009F6FD8 /* CameraManager.swift */,
+			);
+			path = CameraManager;
+			sourceTree = "<group>";
+		};
 		DA63109B275519BD005CACD7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -694,6 +737,7 @@
 		DA6310A127552FB2005CACD7 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				DA5E20DC27623F63009F6FD8 /* CameraManager */,
 				DA6310A8275530CE005CACD7 /* Networking */,
 			);
 			path = Infrastructure;
@@ -981,10 +1025,14 @@
 				DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */,
 				DA5D91DA274032B200699555 /* DatawhaleApp.xcdatamodeld in Sources */,
 				DA5D92362741067900699555 /* Color+Tone.swift in Sources */,
+				DA5E20DB27623815009F6FD8 /* DWCameraBottomView.swift in Sources */,
+				DA560C73276258BA001B7327 /* DWCameraViewModel.swift in Sources */,
+				DA5E20D927623736009F6FD8 /* DWCameraViewController.swift in Sources */,
 				AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */,
 				DA5D92792742B13900699555 /* JJFloatingActionButton+Animation.swift in Sources */,
 				DA5D92552741552B00699555 /* DWClouseDefines.swift in Sources */,
 				DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */,
+				DA5E20DE27623F78009F6FD8 /* CameraManager.swift in Sources */,
 				DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */,
 				DA6310AE2755315E005CACD7 /* NetworkManager.swift in Sources */,
 				DA5D92302741053600699555 /* DWTabBar.swift in Sources */,
@@ -1358,7 +1406,7 @@
 				DA5D91F8274032B400699555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		DA5D91F9274032B400699555 /* Build configuration list for PBXNativeTarget "DatawhaleApp" */ = {
 			isa = XCConfigurationList;
@@ -1367,7 +1415,7 @@
 				DA5D91FB274032B400699555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		DA5D91FC274032B400699555 /* Build configuration list for PBXNativeTarget "DatawhaleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -1376,7 +1424,7 @@
 				DA5D91FE274032B400699555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		DA5D91FF274032B400699555 /* Build configuration list for PBXNativeTarget "DatawhaleAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -1385,7 +1433,7 @@
 				DA5D9201274032B400699555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
