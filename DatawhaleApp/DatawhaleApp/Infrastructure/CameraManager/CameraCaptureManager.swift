@@ -8,16 +8,15 @@
 import UIKit
 import AVFoundation
 
-protocol CameraManagerDelegate : NSObjectProtocol{
-    func cameraCaptureManager(manager : CameraManager, didCaptureImageData imageData : NSData)
-    func cameraCaptureManager(manager : CameraManager, didFailedWithError error : NSError)
-
+protocol CameraCaptureManagerDelegate : NSObjectProtocol{
+    func cameraCaptureManager(manager : CameraCaptureManager, didCaptureImageData imageData : NSData)
+    func cameraCaptureManager(manager : CameraCaptureManager, didFailedWithError error : NSError)
 }
 
-
-class CameraManager: NSObject {
+/// 相机
+class CameraCaptureManager: NSObject {
     
-    weak var delegate : CameraManagerDelegate?
+    weak var delegate : CameraCaptureManagerDelegate?
     
     // 定义相机输入源
     func configCameraSetting() {
@@ -35,7 +34,7 @@ class CameraManager: NSObject {
             return
         }
         guard let input = input else { return  }
-        if (!session.canAddInput(input)) {
+        if (session.canAddInput(input) && !session.inputs.contains(input)) {
             session.addInput(input)
         }
         configOutPutTypes()
@@ -48,8 +47,6 @@ class CameraManager: NSObject {
         self.capturePreviewLayer?.videoGravity = .resizeAspectFill
         lock.unlock()
         NotificationCenter.default.addObserver(self, selector: #selector(sessionRuntimeError), name: NSNotification.Name.AVCaptureSessionRuntimeError, object: nil)
-        
-        
     }
     
     /// 开启相机
@@ -71,13 +68,14 @@ class CameraManager: NSObject {
         if !self.session.outputs.contains(self.photoOutput) && self.session.canAddOutput(self.photoOutput) {
             self.session.addOutput(self.photoOutput)
         }
+        if !self.session.outputs.contains(self.videoOutput) && self.session.canAddOutput(self.videoOutput) {
+            self.session.addOutput(self.videoOutput)
+        }
         photoOutput.setPreparedPhotoSettingsArray([photoSettings]) { isSuccess, error in
             
         }
         self.session.commitConfiguration()
     }
-    
-    
     /// 配置前置摄像头与后置摄像头
     /// - Parameter position: 方向
     /// - Returns: 返回对应摄像头
@@ -85,7 +83,6 @@ class CameraManager: NSObject {
         let session = AVCaptureDevice.DiscoverySession.init(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: position)
         return session.devices.filter { $0.position == position}.first
     }
-    
     /// 开启相机
     func startRunningCamera() {
         DispatchQueue.main.async {
@@ -94,7 +91,6 @@ class CameraManager: NSObject {
             }
         }
     }
-    
     /// 关闭相机
     func stopRunningCamera() {
         DispatchQueue.main.async {
@@ -103,18 +99,13 @@ class CameraManager: NSObject {
             }
         }
     }
-
-    
     private var device : AVCaptureDevice?
-    
     private let session : AVCaptureSession = {
         let session = AVCaptureSession.init()
         session.canSetSessionPreset(.high)
         return session
     } ()
-    
     private var input : AVCaptureDeviceInput?
-    
     let photoSettings : AVCapturePhotoSettings = {
         let photoSettings = AVCapturePhotoSettings.init(format: [AVVideoCodecKey : AVVideoCodecType.jpeg])
         return photoSettings
@@ -123,13 +114,15 @@ class CameraManager: NSObject {
         let photoOutput = AVCapturePhotoOutput.init()
         return photoOutput
     } ()
-    
+    let videoOutput : AVCaptureVideoDataOutput = {
+        let videoOutput = AVCaptureVideoDataOutput.init()
+        videoOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as AnyHashable as! String :NSNumber(value: kCVPixelFormatType_32BGRA)]
+        return videoOutput
+    } ()
     var capturePreviewLayer : AVCaptureVideoPreviewLayer?
-
-
 }
 
-extension CameraManager : AVCapturePhotoCaptureDelegate
+extension CameraCaptureManager : AVCapturePhotoCaptureDelegate
 {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let error = error {

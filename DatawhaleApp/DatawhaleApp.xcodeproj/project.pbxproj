@@ -11,9 +11,17 @@
 		AA3CDEE1274B6B5700670C1D /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CDEE0274B6B5700670C1D /* ExternalAccessory.framework */; };
 		AA3CDEE4274B8B7C00670C1D /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CDEE3274B8B7C00670C1D /* CircleProgressView.swift */; };
 		AA3CDEE7274BAC3500670C1D /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CDEE6274BAC3500670C1D /* Operator.swift */; };
+		AA96C94027633E2A001ED233 /* DebugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA96C93F27633E2A001ED233 /* DebugManager.swift */; };
+		AA96C94227633E9B001ED233 /* VMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA96C94127633E9B001ED233 /* VMemoryManager.swift */; };
+		AA96C94427633F0E001ED233 /* CpuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA96C94327633F0E001ED233 /* CpuManager.swift */; };
+		AA96C94627633F23001ED233 /* FPSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA96C94527633F23001ED233 /* FPSManager.swift */; };
 		AAB081652750EE5D0086EE92 /* DWAnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
+		AAFD0ADD27632DB0005821CA /* CameraRecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */; };
+		AAFD0ADF27632DBF005821CA /* CameraLayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0ADE27632DBF005821CA /* CameraLayerManager.swift */; };
+		AAFD0AE127632E11005821CA /* AlbumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0AE027632E11005821CA /* AlbumManager.swift */; };
+		AAFD0AE327632E1E005821CA /* MetalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0AE227632E1E005821CA /* MetalManager.swift */; };
 		DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */; };
 		DA560C73276258BA001B7327 /* DWCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA560C72276258BA001B7327 /* DWCameraViewModel.swift */; };
 		DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91CF274032B200699555 /* AppDelegate.swift */; };
@@ -58,7 +66,7 @@
 		DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */; };
 		DA5E20D927623736009F6FD8 /* DWCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E20D827623736009F6FD8 /* DWCameraViewController.swift */; };
 		DA5E20DB27623815009F6FD8 /* DWCameraBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E20DA27623815009F6FD8 /* DWCameraBottomView.swift */; };
-		DA5E20DE27623F78009F6FD8 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E20DD27623F78009F6FD8 /* CameraManager.swift */; };
+		DA5E20DE27623F78009F6FD8 /* CameraCaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E20DD27623F78009F6FD8 /* CameraCaptureManager.swift */; };
 		DA63109D275519CC005CACD7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA63109C275519CC005CACD7 /* User.swift */; };
 		DA6310A427552FE2005CACD7 /* APILogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310A327552FE2005CACD7 /* APILogin.swift */; };
 		DA6310A727553087005CACD7 /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310A627553087005CACD7 /* APIUser.swift */; };
@@ -95,9 +103,17 @@
 		AA3CDEE0274B6B5700670C1D /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		AA3CDEE3274B8B7C00670C1D /* CircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		AA3CDEE6274BAC3500670C1D /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		AA96C93F27633E2A001ED233 /* DebugManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugManager.swift; sourceTree = "<group>"; };
+		AA96C94127633E9B001ED233 /* VMemoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMemoryManager.swift; sourceTree = "<group>"; };
+		AA96C94327633F0E001ED233 /* CpuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpuManager.swift; sourceTree = "<group>"; };
+		AA96C94527633F23001ED233 /* FPSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSManager.swift; sourceTree = "<group>"; };
 		AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWAnimationButton.swift; sourceTree = "<group>"; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
 		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
+		AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecognizerManager.swift; sourceTree = "<group>"; };
+		AAFD0ADE27632DBF005821CA /* CameraLayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraLayerManager.swift; sourceTree = "<group>"; };
+		AAFD0AE027632E11005821CA /* AlbumManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumManager.swift; sourceTree = "<group>"; };
+		AAFD0AE227632E1E005821CA /* MetalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalManager.swift; sourceTree = "<group>"; };
 		AF2A42E2AF25CD4E1DEBC754 /* Pods-DatawhaleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.release.xcconfig"; sourceTree = "<group>"; };
 		B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +167,7 @@
 		DA5D928E2742BB2200699555 /* CAGradientLayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Extension.swift"; sourceTree = "<group>"; };
 		DA5E20D827623736009F6FD8 /* DWCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCameraViewController.swift; sourceTree = "<group>"; };
 		DA5E20DA27623815009F6FD8 /* DWCameraBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCameraBottomView.swift; sourceTree = "<group>"; };
-		DA5E20DD27623F78009F6FD8 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		DA5E20DD27623F78009F6FD8 /* CameraCaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureManager.swift; sourceTree = "<group>"; };
 		DA63109C275519CC005CACD7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DA6310A327552FE2005CACD7 /* APILogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogin.swift; sourceTree = "<group>"; };
 		DA6310A627553087005CACD7 /* APIUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUser.swift; sourceTree = "<group>"; };
@@ -231,6 +247,17 @@
 				AA3CDEE6274BAC3500670C1D /* Operator.swift */,
 			);
 			path = Operator;
+			sourceTree = "<group>";
+		};
+		AA96C93E27633E06001ED233 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				AA96C93F27633E2A001ED233 /* DebugManager.swift */,
+				AA96C94127633E9B001ED233 /* VMemoryManager.swift */,
+				AA96C94327633F0E001ED233 /* CpuManager.swift */,
+				AA96C94527633F23001ED233 /* FPSManager.swift */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 		DA4E89D32746AFA600FABF97 /* View */ = {
@@ -347,6 +374,7 @@
 		DA5D920427403BAD00699555 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				AA96C93E27633E06001ED233 /* Debug */,
 				AA3CDEE5274BAC2300670C1D /* Operator */,
 				DA5D92312741056400699555 /* UIComponent */,
 			);
@@ -712,7 +740,11 @@
 		DA5E20DC27623F63009F6FD8 /* CameraManager */ = {
 			isa = PBXGroup;
 			children = (
-				DA5E20DD27623F78009F6FD8 /* CameraManager.swift */,
+				DA5E20DD27623F78009F6FD8 /* CameraCaptureManager.swift */,
+				AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */,
+				AAFD0ADE27632DBF005821CA /* CameraLayerManager.swift */,
+				AAFD0AE027632E11005821CA /* AlbumManager.swift */,
+				AAFD0AE227632E1E005821CA /* MetalManager.swift */,
 			);
 			path = CameraManager;
 			sourceTree = "<group>";
@@ -1005,11 +1037,13 @@
 				DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */,
 				DA5D92562741552B00699555 /* DWQuoteDefines.swift in Sources */,
 				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
+				AA96C94027633E2A001ED233 /* DebugManager.swift in Sources */,
 				DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */,
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
 				DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */,
 				DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */,
 				DA6310AC2755310B005CACD7 /* MoyaConfig.swift in Sources */,
+				AA96C94227633E9B001ED233 /* VMemoryManager.swift in Sources */,
 				DA6310A727553087005CACD7 /* APIUser.swift in Sources */,
 				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
 				DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */,
@@ -1029,15 +1063,18 @@
 				DA560C73276258BA001B7327 /* DWCameraViewModel.swift in Sources */,
 				DA5E20D927623736009F6FD8 /* DWCameraViewController.swift in Sources */,
 				AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */,
+				AA96C94627633F23001ED233 /* FPSManager.swift in Sources */,
 				DA5D92792742B13900699555 /* JJFloatingActionButton+Animation.swift in Sources */,
 				DA5D92552741552B00699555 /* DWClouseDefines.swift in Sources */,
 				DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */,
-				DA5E20DE27623F78009F6FD8 /* CameraManager.swift in Sources */,
+				DA5E20DE27623F78009F6FD8 /* CameraCaptureManager.swift in Sources */,
 				DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */,
 				DA6310AE2755315E005CACD7 /* NetworkManager.swift in Sources */,
+				AAFD0AE327632E1E005821CA /* MetalManager.swift in Sources */,
 				DA5D92302741053600699555 /* DWTabBar.swift in Sources */,
 				DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */,
 				DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */,
+				AAFD0ADF27632DBF005821CA /* CameraLayerManager.swift in Sources */,
 				DA5D927F2742B13900699555 /* JJFloatingActionButtonState.swift in Sources */,
 				DA63109D275519CC005CACD7 /* User.swift in Sources */,
 				AA3CDEE7274BAC3500670C1D /* Operator.swift in Sources */,
@@ -1047,10 +1084,13 @@
 				DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */,
 				AA3CDEE4274B8B7C00670C1D /* CircleProgressView.swift in Sources */,
 				DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */,
+				AAFD0ADD27632DB0005821CA /* CameraRecognizerManager.swift in Sources */,
 				DA5D92822742B13900699555 /* JJFloatingActionButton+Placement.swift in Sources */,
+				AA96C94427633F0E001ED233 /* CpuManager.swift in Sources */,
 				DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */,
 				AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */,
 				DA5D928C2742BA6600699555 /* DWCustomTitleImageButton.swift in Sources */,
+				AAFD0AE127632E11005821CA /* AlbumManager.swift in Sources */,
 				DA5D92802742B13900699555 /* JJActionItemTitlePosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

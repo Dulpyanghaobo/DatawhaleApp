@@ -12,13 +12,19 @@ class DWCameraViewController: DWBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.cameraViewModel.controllerView = self
+        setUpView()
         self.cameraViewModel.configCamera()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-       
+        
     }
+    
+    func setUpView() {
+        self.view.backgroundColor = .black
+    }
+    
     
     let cameraViewModel = DWCameraViewModel()
 

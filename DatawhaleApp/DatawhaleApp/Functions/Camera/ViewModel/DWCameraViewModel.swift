@@ -31,19 +31,19 @@ class DWCameraViewModel : NSObject {
         self.cameraCaptureManager.delegate = self
     }
     
-    private let cameraCaptureManager : CameraManager = {
-        let cameraCaputureManager = CameraManager()
+    private let cameraCaptureManager : CameraCaptureManager = {
+        let cameraCaputureManager = CameraCaptureManager()
         return cameraCaputureManager
     }()
 }
 
-extension DWCameraViewModel : CameraManagerDelegate
+extension DWCameraViewModel : CameraCaptureManagerDelegate
 {
-    func cameraCaptureManager(manager: CameraManager, didCaptureImageData imageData: NSData) {
+    func cameraCaptureManager(manager: CameraCaptureManager, didCaptureImageData imageData: NSData) {
         
     }
     
-    func cameraCaptureManager(manager: CameraManager, didFailedWithError error: NSError) {
+    func cameraCaptureManager(manager: CameraCaptureManager, didFailedWithError error: NSError) {
         
     }
     
