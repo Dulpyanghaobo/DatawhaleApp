@@ -24,6 +24,7 @@
 		AAFD0AE327632E1E005821CA /* MetalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0AE227632E1E005821CA /* MetalManager.swift */; };
 		DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */; };
 		DA560C73276258BA001B7327 /* DWCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA560C72276258BA001B7327 /* DWCameraViewModel.swift */; };
+		DA560C7527639952001B7327 /* CameraSettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA560C7427639952001B7327 /* CameraSettingManager.swift */; };
 		DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91CF274032B200699555 /* AppDelegate.swift */; };
 		DA5D91D2274032B200699555 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D1274032B200699555 /* SceneDelegate.swift */; };
 		DA5D91D4274032B200699555 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91D3274032B200699555 /* ViewController.swift */; };
@@ -74,6 +75,7 @@
 		DA6310AC2755310B005CACD7 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310AB2755310B005CACD7 /* MoyaConfig.swift */; };
 		DA6310AE2755315E005CACD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310AD2755315E005CACD7 /* NetworkManager.swift */; };
 		DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD408A927498D04008C04AE /* GoogleService-Info.plist */; };
+		DAEC98CB276662CE00553C3F /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DAEC98CA276662CE00553C3F /* DeepLabV3.mlmodel */; };
 		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
 		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -119,6 +121,7 @@
 		B88DE2E613120D021148C4C0 /* Pods_DatawhaleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatawhaleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4E89D52746AFCA00FABF97 /* DWLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWLoginViewController.swift; sourceTree = "<group>"; };
 		DA560C72276258BA001B7327 /* DWCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWCameraViewModel.swift; sourceTree = "<group>"; };
+		DA560C7427639952001B7327 /* CameraSettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSettingManager.swift; sourceTree = "<group>"; };
 		DA5D91CC274032B200699555 /* DatawhaleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatawhaleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5D91CF274032B200699555 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA5D91D1274032B200699555 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +179,7 @@
 		DA6310AD2755315E005CACD7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DAD408A62749760C008C04AE /* DatawhaleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatawhaleApp.entitlements; sourceTree = "<group>"; };
 		DAD408A927498D04008C04AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DAEC98CA276662CE00553C3F /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
 		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -398,6 +402,7 @@
 		DA5D920727403BCE00699555 /* OtherResources */ = {
 			isa = PBXGroup;
 			children = (
+				DAEC98CA276662CE00553C3F /* DeepLabV3.mlmodel */,
 			);
 			path = OtherResources;
 			sourceTree = "<group>";
@@ -745,6 +750,7 @@
 				AAFD0ADE27632DBF005821CA /* CameraLayerManager.swift */,
 				AAFD0AE027632E11005821CA /* AlbumManager.swift */,
 				AAFD0AE227632E1E005821CA /* MetalManager.swift */,
+				DA560C7427639952001B7327 /* CameraSettingManager.swift */,
 			);
 			path = CameraManager;
 			sourceTree = "<group>";
@@ -1037,6 +1043,7 @@
 				DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */,
 				DA5D92562741552B00699555 /* DWQuoteDefines.swift in Sources */,
 				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
+				DAEC98CB276662CE00553C3F /* DeepLabV3.mlmodel in Sources */,
 				AA96C94027633E2A001ED233 /* DebugManager.swift in Sources */,
 				DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */,
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
@@ -1044,6 +1051,7 @@
 				DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */,
 				DA6310AC2755310B005CACD7 /* MoyaConfig.swift in Sources */,
 				AA96C94227633E9B001ED233 /* VMemoryManager.swift in Sources */,
+				DA560C7527639952001B7327 /* CameraSettingManager.swift in Sources */,
 				DA6310A727553087005CACD7 /* APIUser.swift in Sources */,
 				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
 				DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */,

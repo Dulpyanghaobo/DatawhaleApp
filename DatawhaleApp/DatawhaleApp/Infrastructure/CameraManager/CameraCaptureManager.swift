@@ -68,9 +68,6 @@ class CameraCaptureManager: NSObject {
         if !self.session.outputs.contains(self.photoOutput) && self.session.canAddOutput(self.photoOutput) {
             self.session.addOutput(self.photoOutput)
         }
-        if !self.session.outputs.contains(self.videoOutput) && self.session.canAddOutput(self.videoOutput) {
-            self.session.addOutput(self.videoOutput)
-        }
         photoOutput.setPreparedPhotoSettingsArray([photoSettings]) { isSuccess, error in
             
         }
