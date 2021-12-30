@@ -17,9 +17,11 @@ class DWHomeViewController: UIViewController {
         }
         collectionView.delegate = self
         collectionView.dataSource = self
+
+    }
+    @objc func click() {
         
     }
-    
     private let collectionView : UICollectionView = {
         let collectionViewLayout = UICollectionViewFlowLayout()
         collectionViewLayout.scrollDirection = .vertical
