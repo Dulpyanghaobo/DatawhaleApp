@@ -35,13 +35,14 @@ class DWTabBar: UITabBar ,DWFloatButtonActionDelegate{
     override func layoutSubviews() {
         super.layoutSubviews()
         let centerAddWidth = 56
+        let centerAddWidthCalWidth = 56 + 12
         var itemWidth : Int = 0
         if let count = self.items?.count {
-            itemWidth = (DWScreenWidth - centerAddWidth) / count
+            itemWidth = (DWScreenWidth - centerAddWidthCalWidth) / count
         }
 
-        let centerAddIndex = 1
-        self.centerButton.frame = CGRect.init(x: itemWidth, y: -17, width: centerAddWidth, height: centerAddWidth)
+        let centerAddIndex = 2
+        self.centerButton.frame = CGRect.init(x: (DWScreenWidth - centerAddWidth) / 2, y: -17, width: centerAddWidth, height: centerAddWidth)
         self.items?.map({
             $0.imageInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: -10, right: 0)
             $0.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.regularFont(11),NSAttributedString.Key.foregroundColor : UIColor.lightGray4()], for: .normal)
@@ -51,13 +52,12 @@ class DWTabBar: UITabBar ,DWFloatButtonActionDelegate{
         self.subviews.map { child in
             if child.isKind(of: NSClassFromString("UITabBarButton")!) {
                 var spaceX : Int = 0
-                if tabBarButtonIndex == centerAddIndex {
-                    spaceX = centerAddWidth
+                if tabBarButtonIndex >= centerAddIndex {
+                    spaceX = centerAddWidthCalWidth
                 }
                 let frame = CGRect.init(x: tabBarButtonIndex * itemWidth + Int(spaceX), y: -5, width: itemWidth, height: 49)
                 child.frame = frame
                 tabBarButtonIndex += 1
-                
             } else if (child.isKind(of: NSClassFromString("_UIBarBackground")!)) {
                 child.isHidden = true
             }
@@ -83,7 +83,7 @@ class DWTabBar: UITabBar ,DWFloatButtonActionDelegate{
     
     private let centerButton : UIButton = {
         let button = UIButton.init(type: .custom)
-        button.setImage(UIImage.init(named: "tabbar_center_button"), for: .normal)
+        button.setBackgroundImage(UIImage.init(named: "tabbar_center_button"), for: .normal)
         button.addTarget(self, action: #selector(didTapAction), for: .touchUpInside)
         return button
     } ()

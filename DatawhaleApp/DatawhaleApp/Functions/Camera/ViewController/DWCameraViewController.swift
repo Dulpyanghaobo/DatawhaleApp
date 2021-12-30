@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DWCameraViewController: DWBaseViewController {
+class DWCameraViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

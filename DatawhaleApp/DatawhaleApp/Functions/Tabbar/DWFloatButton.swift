@@ -27,10 +27,10 @@ protocol DWFloatButtonActionDelegate : NSObjectProtocol {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let visiEffect = UIBlurEffect(style: .dark)
-        let effectView = UIVisualEffectView(effect: visiEffect)
-        effectView.frame = CGRect(x: 0, y: 0, width: DWScreenWidth, height: DWScreenHeight)
-        addSubview(effectView)
+        addSubview(self.visualEffectView)
+        self.visualEffectView.snp.makeConstraints{
+            $0.edges.equalToSuperview().inset(UIEdgeInsets.zero)
+        }
         addSubview(actionButton)
         actionButton.circleView.color = .clear
         actionButton.buttonImage = UIImage.init(named: "tabbar_close_image")
@@ -107,6 +107,13 @@ protocol DWFloatButtonActionDelegate : NSObjectProtocol {
             make.centerX.equalToSuperview()
         }
     }
+
+    // 自定义毛玻璃
+    private var visualEffectView : DWVisualEffectView = {
+        var visualEffectView = DWVisualEffectView()
+        visualEffectView.ios14_colorTint = .black.withAlphaComponent(0.7)
+        return visualEffectView
+    }()
 }
 
 extension DWFloatButton : JJFloatingActionButtonDelegate
@@ -130,6 +137,10 @@ extension DWFloatButton : JJFloatingActionButtonDelegate
 extension DWFloatButton
 {
     @objc func open() {
+        self.visualEffectView.blurRadius = 0
+        UIView.animate(withDuration: 0.33) {
+            self.visualEffectView.blurRadius = 15
+        }
         self.actionButton.buttonState = .closed
         self.actionButton.buttonWasTapped()
     }

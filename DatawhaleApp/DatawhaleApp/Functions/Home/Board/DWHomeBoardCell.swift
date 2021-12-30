@@ -44,7 +44,7 @@ class DWHomeBoardCell: UICollectionViewCell {
         }
     }
     func p_setUpData() {
-        self.rightButton.outputDelegate = self
+//        self.rightButton.outputDelegate = self
     }
     required init?(coder: NSCoder) {
         fatalError("")
@@ -58,21 +58,9 @@ class DWHomeBoardCell: UICollectionViewCell {
         return label
     } ()
     
-    private let rightButton : DWCustomTitleImageButton = {
-        let rightButton = DWCustomTitleImageButton.init(frame: CGRect.init(x: 0, y: 0, width: 86, height: 26))
-        let layer = CAGradientLayer.init(colors: [UIColor.colorWithHexStr("0D67B3"),UIColor.colorWithHexStr("238085")], locations: [0.0,1.0], startPoint: CGPoint.init(x: 0.5, y: 0), endPoint: CGPoint.init(x: 0.5, y: 1), type: CAGradientLayerType.axial)
-        layer.position = rightButton.center
-        let layerBackView = CALayer()
-        layerBackView.backgroundColor = UIColor.black.withAlphaComponent(0.2).cgColor
-        layerBackView.position = rightButton.center
-        layerBackView.bounds = rightButton.bounds
-        rightButton.customLayer = layer
-        rightButton.layer.insertSublayer(layerBackView, at: 1)
-        rightButton.title = "提醒"
-        rightButton.image = "home_remind_cion"
-        rightButton.alignType = .RightAlign
-        rightButton.imagePadding = 2
-        return rightButton
+    private let rightButton : UIButton = {
+        let button = UIButton.init(type: .custom)
+        return button
     } ()
     
     private lazy var progressView : UIProgressView = {

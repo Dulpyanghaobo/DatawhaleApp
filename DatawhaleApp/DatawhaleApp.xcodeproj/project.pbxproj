@@ -37,6 +37,16 @@
 		AAB081652750EE5D0086EE92 /* DWAnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */; };
 		AAC45CC32766FEAF00482837 /* DWVisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC45CC22766FEAF00482837 /* DWVisionManager.swift */; };
 		AAC45CC727671DEC00482837 /* DWBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC45CC627671DEC00482837 /* DWBehavior.swift */; };
+		AACD6F98277D610800D4CC8B /* UIVisualEffectView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6F96277D610800D4CC8B /* UIVisualEffectView+Extension.swift */; };
+		AACD6F99277D610800D4CC8B /* DWVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6F97277D610800D4CC8B /* DWVisualEffectView.swift */; };
+		AACD6FA6277D866600D4CC8B /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FA5277D866600D4CC8B /* TaskViewController.swift */; };
+		AACD6FA8277D876C00D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FA7277D876C00D4CC8B /* InfoPlist.strings */; };
+		AACD6FB9277D8AAC00D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FB4277D8AAC00D4CC8B /* InfoPlist.strings */; };
+		AACD6FBA277D8AAC00D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FB7277D8AAC00D4CC8B /* InfoPlist.strings */; };
+		AACD6FBD277D8DBB00D4CC8B /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FBC277D8DBB00D4CC8B /* UITableViewExtensions.swift */; };
+		AACD6FC0277D9E8300D4CC8B /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FBF277D9E8300D4CC8B /* GoalViewController.swift */; };
+		AACD6FC3277DA3A000D4CC8B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FC2277DA3A000D4CC8B /* UIViewController+Extension.swift */; };
+		AACD6FC5277DA3F100D4CC8B /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FC4277DA3F100D4CC8B /* UINavigationController+Extension.swift */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
 		AAFD0ADD27632DB0005821CA /* CameraRecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */; };
@@ -56,8 +66,6 @@
 		DA5D91EA274032B400699555 /* DatawhaleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91E9274032B400699555 /* DatawhaleAppTests.swift */; };
 		DA5D91F4274032B400699555 /* DatawhaleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91F3274032B400699555 /* DatawhaleAppUITests.swift */; };
 		DA5D91F6274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91F5274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift */; };
-		DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D9220274043EE00699555 /* DWBaseViewController.swift */; };
-		DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92222740442A00699555 /* DWNavigationController.swift */; };
 		DA5D922527404A9000699555 /* DWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D922427404A9000699555 /* DWTabBarController.swift */; };
 		DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92282741027D00699555 /* DWHomeViewController.swift */; };
 		DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D922C274102A000699555 /* DWMeViewController.swift */; };
@@ -96,7 +104,6 @@
 		DA6310AC2755310B005CACD7 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310AB2755310B005CACD7 /* MoyaConfig.swift */; };
 		DA6310AE2755315E005CACD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6310AD2755315E005CACD7 /* NetworkManager.swift */; };
 		DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD408A927498D04008C04AE /* GoogleService-Info.plist */; };
-		DAEC98CB276662CE00553C3F /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DAEC98CA276662CE00553C3F /* DeepLabV3.mlmodel */; };
 		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
 		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -153,6 +160,18 @@
 		AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWAnimationButton.swift; sourceTree = "<group>"; };
 		AAC45CC22766FEAF00482837 /* DWVisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWVisionManager.swift; sourceTree = "<group>"; };
 		AAC45CC627671DEC00482837 /* DWBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWBehavior.swift; sourceTree = "<group>"; };
+		AACD6F96277D610800D4CC8B /* UIVisualEffectView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVisualEffectView+Extension.swift"; sourceTree = "<group>"; };
+		AACD6F97277D610800D4CC8B /* DWVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWVisualEffectView.swift; sourceTree = "<group>"; };
+		AACD6FA5277D866600D4CC8B /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		AACD6FA7277D876C00D4CC8B /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		AACD6FAB277D87D100D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		AACD6FAC277D87D100D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		AACD6FB5277D8AAC00D4CC8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		AACD6FB8277D8AAC00D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = InfoPlist.strings; sourceTree = "<group>"; };
+		AACD6FBC277D8DBB00D4CC8B /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		AACD6FBF277D9E8300D4CC8B /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		AACD6FC2277DA3A000D4CC8B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		AACD6FC4277DA3F100D4CC8B /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
 		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
 		AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecognizerManager.swift; sourceTree = "<group>"; };
@@ -179,8 +198,6 @@
 		DA5D91EF274032B400699555 /* DatawhaleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatawhaleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5D91F3274032B400699555 /* DatawhaleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatawhaleAppUITests.swift; sourceTree = "<group>"; };
 		DA5D91F5274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatawhaleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DA5D9220274043EE00699555 /* DWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWBaseViewController.swift; sourceTree = "<group>"; };
-		DA5D92222740442A00699555 /* DWNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWNavigationController.swift; sourceTree = "<group>"; };
 		DA5D922427404A9000699555 /* DWTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWTabBarController.swift; sourceTree = "<group>"; };
 		DA5D92282741027D00699555 /* DWHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeViewController.swift; sourceTree = "<group>"; };
 		DA5D922C274102A000699555 /* DWMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWMeViewController.swift; sourceTree = "<group>"; };
@@ -222,7 +239,6 @@
 		DA6310AD2755315E005CACD7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DAD408A62749760C008C04AE /* DatawhaleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatawhaleApp.entitlements; sourceTree = "<group>"; };
 		DAD408A927498D04008C04AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DAEC98CA276662CE00553C3F /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
 		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -348,7 +364,12 @@
 		AA9FD3DA27683FC400191956 /* UIComponet */ = {
 			isa = PBXGroup;
 			children = (
-				AA9FD3E42768714B00191956 /* PopWindows */,
+				AACD6FA2277D65EE00D4CC8B /* CollectionView */,
+				AACD6FA1277D65E700D4CC8B /* TableView */,
+				AACD6FA0277D65D600D4CC8B /* Color */,
+				AACD6F9F277D65D000D4CC8B /* Font */,
+				AACD6F95277D60D900D4CC8B /* Blur */,
+				AA9FD3E42768714B00191956 /* Pop */,
 			);
 			path = UIComponet;
 			sourceTree = "<group>";
@@ -362,7 +383,7 @@
 			path = Show;
 			sourceTree = "<group>";
 		};
-		AA9FD3E42768714B00191956 /* PopWindows */ = {
+		AA9FD3E42768714B00191956 /* Pop */ = {
 			isa = PBXGroup;
 			children = (
 				AA9FD3C42768393100191956 /* Manager */,
@@ -373,7 +394,7 @@
 				AA9FD3EB2768723100191956 /* NoModalPopup */,
 				AA9FD3EA2768721700191956 /* ModalPopup */,
 			);
-			path = PopWindows;
+			path = Pop;
 			sourceTree = "<group>";
 		};
 		AA9FD3E52768715400191956 /* Popover */ = {
@@ -517,6 +538,99 @@
 			path = AlbumManager;
 			sourceTree = "<group>";
 		};
+		AACD6F95277D60D900D4CC8B /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				AACD6F97277D610800D4CC8B /* DWVisualEffectView.swift */,
+				AACD6F96277D610800D4CC8B /* UIVisualEffectView+Extension.swift */,
+			);
+			path = Blur;
+			sourceTree = "<group>";
+		};
+		AACD6F9A277D626800D4CC8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AACD6F9B277D626D00D4CC8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AACD6F9F277D65D000D4CC8B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		AACD6FA0277D65D600D4CC8B /* Color */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		AACD6FA1277D65E700D4CC8B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				AACD6FBC277D8DBB00D4CC8B /* UITableViewExtensions.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		AACD6FA2277D65EE00D4CC8B /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		AACD6FA4277D861A00D4CC8B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AACD6FA5277D866600D4CC8B /* TaskViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AACD6FB3277D8AAC00D4CC8B /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AACD6FB4277D8AAC00D4CC8B /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		AACD6FB6277D8AAC00D4CC8B /* zh-Hans.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AACD6FB7277D8AAC00D4CC8B /* InfoPlist.strings */,
+			);
+			path = "zh-Hans.lproj";
+			sourceTree = "<group>";
+		};
+		AACD6FBE277D9E6700D4CC8B /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				AACD6FBF277D9E8300D4CC8B /* GoalViewController.swift */,
+			);
+			path = Goal;
+			sourceTree = "<group>";
+		};
+		AACD6FC1277DA38F00D4CC8B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AACD6FC2277DA3A000D4CC8B /* UIViewController+Extension.swift */,
+				AACD6FC4277DA3F100D4CC8B /* UINavigationController+Extension.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		DA4E89D32746AFA600FABF97 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +733,7 @@
 				DA5D921127403FF000699555 /* Relax */,
 				DA5D921027403FE900699555 /* Study */,
 				DA5D920F27403FD600699555 /* DaySummary */,
+				AACD6FBE277D9E6700D4CC8B /* Goal */,
 				DA5D920E27403FCB00699555 /* Task */,
 				DA5D920D27403FB500699555 /* Login */,
 				DA5D920C27403FAE00699555 /* Meta */,
@@ -648,6 +763,8 @@
 		DA5D920627403BC600699555 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				AACD6FB3277D8AAC00D4CC8B /* en.lproj */,
+				AACD6FB6277D8AAC00D4CC8B /* zh-Hans.lproj */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -655,7 +772,6 @@
 		DA5D920727403BCE00699555 /* OtherResources */ = {
 			isa = PBXGroup;
 			children = (
-				DAEC98CA276662CE00553C3F /* DeepLabV3.mlmodel */,
 			);
 			path = OtherResources;
 			sourceTree = "<group>";
@@ -709,6 +825,10 @@
 		DA5D920E27403FCB00699555 /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				AACD6FA4277D861A00D4CC8B /* ViewController */,
+				AACD6F9B277D626D00D4CC8B /* ViewModel */,
+				AACD6F9A277D626800D4CC8B /* View */,
+				AACD6FA7277D876C00D4CC8B /* InfoPlist.strings */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -818,8 +938,7 @@
 		DA5D921E274043CF00699555 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				DA5D9220274043EE00699555 /* DWBaseViewController.swift */,
-				DA5D92222740442A00699555 /* DWNavigationController.swift */,
+				AACD6FC1277DA38F00D4CC8B /* UI */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1148,6 +1267,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = DA5D91C3274032B200699555;
 			productRefGroup = DA5D91CD274032B200699555 /* Products */;
@@ -1167,9 +1287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5D91DF274032B400699555 /* LaunchScreen.storyboard in Resources */,
+				AACD6FBA277D8AAC00D4CC8B /* InfoPlist.strings in Resources */,
+				AACD6FB9277D8AAC00D4CC8B /* InfoPlist.strings in Resources */,
 				DA5D91DC274032B400699555 /* Assets.xcassets in Resources */,
 				DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */,
 				DA5D91D7274032B200699555 /* Main.storyboard in Resources */,
+				AACD6FA8277D876C00D4CC8B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1299,8 +1422,6 @@
 			files = (
 				DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */,
 				DA5D92562741552B00699555 /* DWQuoteDefines.swift in Sources */,
-				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
-				DAEC98CB276662CE00553C3F /* DeepLabV3.mlmodel in Sources */,
 				AA96C94027633E2A001ED233 /* DebugManager.swift in Sources */,
 				DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */,
 				AAC45CC32766FEAF00482837 /* DWVisionManager.swift in Sources */,
@@ -1312,6 +1433,7 @@
 				AA96C94227633E9B001ED233 /* VMemoryManager.swift in Sources */,
 				DA560C7527639952001B7327 /* CameraSettingManager.swift in Sources */,
 				DA6310A727553087005CACD7 /* APIUser.swift in Sources */,
+				AACD6FA6277D866600D4CC8B /* TaskViewController.swift in Sources */,
 				AA9FD42E276B3FA900191956 /* DWPopContext.swift in Sources */,
 				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
 				DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */,
@@ -1326,12 +1448,14 @@
 				DA5D92832742B13900699555 /* LayerProperties.swift in Sources */,
 				DA5D922527404A9000699555 /* DWTabBarController.swift in Sources */,
 				AAC45CC727671DEC00482837 /* DWBehavior.swift in Sources */,
+				AACD6FC0277D9E8300D4CC8B /* GoalViewController.swift in Sources */,
 				AA9FD3D127683AA800191956 /* DWBehaviorManager.swift in Sources */,
 				DA5D927C2742B13900699555 /* Styles.swift in Sources */,
 				AA9FD429276B37FC00191956 /* DWPopView.swift in Sources */,
 				DA5D92852742B13900699555 /* JJCircleView.swift in Sources */,
 				AA9FD430276B42F800191956 /* DWAdsore.swift in Sources */,
 				DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */,
+				AACD6F98277D610800D4CC8B /* UIVisualEffectView+Extension.swift in Sources */,
 				AA9FD423276B309300191956 /* DWPopOriginalInfo.swift in Sources */,
 				DA5D91DA274032B200699555 /* DatawhaleApp.xcdatamodeld in Sources */,
 				DA5D92362741067900699555 /* Color+Tone.swift in Sources */,
@@ -1348,6 +1472,7 @@
 				DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */,
 				AA9FD3DF276841A700191956 /* DWShowManager.swift in Sources */,
 				DA5E20DE27623F78009F6FD8 /* CameraCaptureManager.swift in Sources */,
+				AACD6F99277D610800D4CC8B /* DWVisualEffectView.swift in Sources */,
 				AA9FD3E12768462A00191956 /* DWShowAnimator.swift in Sources */,
 				DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */,
 				DA6310AE2755315E005CACD7 /* NetworkManager.swift in Sources */,
@@ -1355,11 +1480,14 @@
 				AAFD0AE327632E1E005821CA /* MetalManager.swift in Sources */,
 				DA5D92302741053600699555 /* DWTabBar.swift in Sources */,
 				DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */,
+				AACD6FC3277DA3A000D4CC8B /* UIViewController+Extension.swift in Sources */,
 				AA9FD3C32768387000191956 /* DWAppearance.swift in Sources */,
 				DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */,
 				AAFD0ADF27632DBF005821CA /* CameraLayerManager.swift in Sources */,
+				AACD6FBD277D8DBB00D4CC8B /* UITableViewExtensions.swift in Sources */,
 				DA5D927F2742B13900699555 /* JJFloatingActionButtonState.swift in Sources */,
 				DA63109D275519CC005CACD7 /* User.swift in Sources */,
+				AACD6FC5277DA3F100D4CC8B /* UINavigationController+Extension.swift in Sources */,
 				AA3CDEE7274BAC3500670C1D /* Operator.swift in Sources */,
 				DA5D927B2742B13900699555 /* JJFloatingActionButtonDelegate.swift in Sources */,
 				AA9FD3C82768395D00191956 /* DWPopManager.swift in Sources */,
@@ -1367,7 +1495,6 @@
 				DA5D9261274159AA00699555 /* UIDevice+DWExtension.m in Sources */,
 				DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */,
 				AA3CDEE4274B8B7C00670C1D /* CircleProgressView.swift in Sources */,
-				DA5D92232740442A00699555 /* DWNavigationController.swift in Sources */,
 				AAFD0ADD27632DB0005821CA /* CameraRecognizerManager.swift in Sources */,
 				DA5D92822742B13900699555 /* JJFloatingActionButton+Placement.swift in Sources */,
 				AA96C94427633F0E001ED233 /* CpuManager.swift in Sources */,
@@ -1414,10 +1541,27 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AACD6FB4277D8AAC00D4CC8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AACD6FB5277D8AAC00D4CC8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AACD6FB7277D8AAC00D4CC8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AACD6FB8277D8AAC00D4CC8B /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		DA5D91D5274032B200699555 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DA5D91D6274032B200699555 /* Base */,
+				AACD6FAB277D87D100D4CC8B /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1426,6 +1570,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DA5D91DE274032B400699555 /* Base */,
+				AACD6FAC277D87D100D4CC8B /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1437,6 +1582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -1498,6 +1644,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -1563,7 +1710,7 @@
 				DEVELOPMENT_TEAM = ZR65RQ5GJR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DatawhaleApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = DatewhaleApp;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1600,7 +1747,7 @@
 				DEVELOPMENT_TEAM = ZR65RQ5GJR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DatawhaleApp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = DatewhaleApp;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

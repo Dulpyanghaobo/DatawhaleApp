@@ -15,7 +15,6 @@ target 'DatawhaleApp' do
     pod 'ObjectMapper'
     pod 'SwiftDate'
     pod 'URLNavigator'
-    pod 'ESPullToRefresh'
     pod 'ReSwift'
   target 'DatawhaleAppTests' do
     inherit! :search_paths

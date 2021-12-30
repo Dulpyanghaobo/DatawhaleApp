@@ -10,7 +10,7 @@ import UIKit
 import AuthenticationServices
 import CryptoKit
 
-class DWLoginViewController: DWBaseViewController {
+class DWLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

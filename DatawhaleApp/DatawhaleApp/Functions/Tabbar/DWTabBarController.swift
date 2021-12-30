@@ -13,16 +13,21 @@ class DWTabBarController: UITabBarController {
         super.viewDidLoad()
         let homeViewController = DWHomeViewController.init()
         let meViewController = DWMeViewController.init()
-        let homeNavigationController = DWNavigationController.init(rootViewController: homeViewController)
+        let taskViewController = TaskViewController.init()
+        let goalViewController = GoalViewController.init()
+        let homeNavigationController = UINavigationController.init(rootViewController: homeViewController)
         homeNavigationController.tabBarItem = tabBarItem(title: "home", imageName: "tabbar_home_icon", selectedImageName: "tabbar_home_select_icon1")
-        let meNavigationController = DWNavigationController.init(rootViewController: meViewController)
+        let taskNavigationController = UINavigationController.init(rootViewController: taskViewController)
+        taskNavigationController.tabBarItem = tabBarItem(title: "task", imageName: "task_items_bottom_tabbar", selectedImageName: "task_items_bottom_tabbar")
+        let goalNavController = UINavigationController.init(rootViewController: goalViewController)
+        goalNavController.tabBarItem = tabBarItem(title: "goal", imageName: "goal_items_bottom_Tabbar", selectedImageName: "goal_items_bottom_Tabbar")
+        let meNavigationController = UINavigationController.init(rootViewController: meViewController)
         meNavigationController.tabBarItem = tabBarItem(title: "me", imageName: "tabbar_me_icon", selectedImageName: "tabbar_me_select_icon1")
         let tabbar = DWTabBar.init()
         tabbar.unselectedItemTintColor = UIColor.lightGray4()
-
         self.setValue(tabbar, forKey: "tabBar")
         self.delegate = self
-        self.viewControllers = [homeNavigationController, meNavigationController]
+        self.viewControllers = [homeNavigationController,taskNavigationController,goalNavController, meNavigationController]
     }
     
     // MARK: - Private Method
