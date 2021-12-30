@@ -1426,6 +1426,7 @@
 			files = (
 				DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */,
 				DA5D92562741552B00699555 /* DWQuoteDefines.swift in Sources */,
+				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
 				AA96C94027633E2A001ED233 /* DebugManager.swift in Sources */,
 				DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */,
 				AAC45CC32766FEAF00482837 /* DWVisionManager.swift in Sources */,
