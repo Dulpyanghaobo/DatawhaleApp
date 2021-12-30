@@ -47,6 +47,7 @@
 		AACD6FC0277D9E8300D4CC8B /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FBF277D9E8300D4CC8B /* GoalViewController.swift */; };
 		AACD6FC3277DA3A000D4CC8B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FC2277DA3A000D4CC8B /* UIViewController+Extension.swift */; };
 		AACD6FC5277DA3F100D4CC8B /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FC4277DA3F100D4CC8B /* UINavigationController+Extension.swift */; };
+		AACD6FC9277DCC4100D4CC8B /* pull_refresh_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FC8277DCC4100D4CC8B /* pull_refresh_loading.json */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
 		AAFD0ADD27632DB0005821CA /* CameraRecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */; };
@@ -172,6 +173,7 @@
 		AACD6FBF277D9E8300D4CC8B /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		AACD6FC2277DA3A000D4CC8B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		AACD6FC4277DA3F100D4CC8B /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		AACD6FC8277DCC4100D4CC8B /* pull_refresh_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pull_refresh_loading.json; sourceTree = "<group>"; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
 		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
 		AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecognizerManager.swift; sourceTree = "<group>"; };
@@ -772,6 +774,7 @@
 		DA5D920727403BCE00699555 /* OtherResources */ = {
 			isa = PBXGroup;
 			children = (
+				AACD6FC8277DCC4100D4CC8B /* pull_refresh_loading.json */,
 			);
 			path = OtherResources;
 			sourceTree = "<group>";
@@ -1293,6 +1296,7 @@
 				DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */,
 				DA5D91D7274032B200699555 /* Main.storyboard in Resources */,
 				AACD6FA8277D876C00D4CC8B /* InfoPlist.strings in Resources */,
+				AACD6FC9277DCC4100D4CC8B /* pull_refresh_loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
