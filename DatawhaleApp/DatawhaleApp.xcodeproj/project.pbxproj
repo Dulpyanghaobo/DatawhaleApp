@@ -15,7 +15,28 @@
 		AA96C94227633E9B001ED233 /* VMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA96C94127633E9B001ED233 /* VMemoryManager.swift */; };
 		AA96C94427633F0E001ED233 /* CpuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA96C94327633F0E001ED233 /* CpuManager.swift */; };
 		AA96C94627633F23001ED233 /* FPSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA96C94527633F23001ED233 /* FPSManager.swift */; };
+		AA9FD3C32768387000191956 /* DWAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD3C22768387000191956 /* DWAppearance.swift */; };
+		AA9FD3C62768394F00191956 /* DWToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD3C52768394F00191956 /* DWToastManager.swift */; };
+		AA9FD3C82768395D00191956 /* DWPopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD3C72768395D00191956 /* DWPopManager.swift */; };
+		AA9FD3D127683AA800191956 /* DWBehaviorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD3D027683AA800191956 /* DWBehaviorManager.swift */; };
+		AA9FD3D527683AC400191956 /* DWAppearanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD3D427683AC400191956 /* DWAppearanceManager.swift */; };
+		AA9FD3DF276841A700191956 /* DWShowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD3DE276841A700191956 /* DWShowManager.swift */; };
+		AA9FD3E12768462A00191956 /* DWShowAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD3E02768462A00191956 /* DWShowAnimator.swift */; };
+		AA9FD3EF2768759D00191956 /* DWDefaultBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD3EE2768759D00191956 /* DWDefaultBehavior.swift */; };
+		AA9FD3F1276875B100191956 /* DWAWaitBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD3F0276875B100191956 /* DWAWaitBehavior.swift */; };
+		AA9FD41B276B2DE900191956 /* DWPopPreprocess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD41A276B2DE900191956 /* DWPopPreprocess.swift */; };
+		AA9FD41D276B2F7800191956 /* DWPopOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD41C276B2F7800191956 /* DWPopOperation.swift */; };
+		AA9FD421276B2FC900191956 /* DWPopProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD420276B2FC900191956 /* DWPopProducer.swift */; };
+		AA9FD423276B309300191956 /* DWPopOriginalInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD422276B309300191956 /* DWPopOriginalInfo.swift */; };
+		AA9FD429276B37FC00191956 /* DWPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD428276B37FC00191956 /* DWPopView.swift */; };
+		AA9FD42B276B3A6300191956 /* DWMaskAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD42A276B3A6300191956 /* DWMaskAppearance.swift */; };
+		AA9FD42E276B3FA900191956 /* DWPopContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD42D276B3FA900191956 /* DWPopContext.swift */; };
+		AA9FD430276B42F800191956 /* DWAdsore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD42F276B42F800191956 /* DWAdsore.swift */; };
+		AA9FD432276B482D00191956 /* PopCompatiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD431276B482D00191956 /* PopCompatiable.swift */; };
+		AA9FD434276B48A500191956 /* Pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD433276B48A500191956 /* Pop.swift */; };
 		AAB081652750EE5D0086EE92 /* DWAnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */; };
+		AAC45CC32766FEAF00482837 /* DWVisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC45CC22766FEAF00482837 /* DWVisionManager.swift */; };
+		AAC45CC727671DEC00482837 /* DWBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC45CC627671DEC00482837 /* DWBehavior.swift */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
 		AAFD0ADD27632DB0005821CA /* CameraRecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */; };
@@ -109,7 +130,29 @@
 		AA96C94127633E9B001ED233 /* VMemoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMemoryManager.swift; sourceTree = "<group>"; };
 		AA96C94327633F0E001ED233 /* CpuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpuManager.swift; sourceTree = "<group>"; };
 		AA96C94527633F23001ED233 /* FPSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPSManager.swift; sourceTree = "<group>"; };
+		AA9FD3C22768387000191956 /* DWAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWAppearance.swift; sourceTree = "<group>"; };
+		AA9FD3C52768394F00191956 /* DWToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWToastManager.swift; sourceTree = "<group>"; };
+		AA9FD3C72768395D00191956 /* DWPopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWPopManager.swift; sourceTree = "<group>"; };
+		AA9FD3D027683AA800191956 /* DWBehaviorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWBehaviorManager.swift; sourceTree = "<group>"; };
+		AA9FD3D427683AC400191956 /* DWAppearanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWAppearanceManager.swift; sourceTree = "<group>"; };
+		AA9FD3DE276841A700191956 /* DWShowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWShowManager.swift; sourceTree = "<group>"; };
+		AA9FD3E02768462A00191956 /* DWShowAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWShowAnimator.swift; sourceTree = "<group>"; };
+		AA9FD3EE2768759D00191956 /* DWDefaultBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWDefaultBehavior.swift; sourceTree = "<group>"; };
+		AA9FD3F0276875B100191956 /* DWAWaitBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWAWaitBehavior.swift; sourceTree = "<group>"; };
+		AA9FD416276B2D6100191956 /* generate.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = generate.md; sourceTree = "<group>"; };
+		AA9FD41A276B2DE900191956 /* DWPopPreprocess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWPopPreprocess.swift; sourceTree = "<group>"; };
+		AA9FD41C276B2F7800191956 /* DWPopOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWPopOperation.swift; sourceTree = "<group>"; };
+		AA9FD420276B2FC900191956 /* DWPopProducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWPopProducer.swift; sourceTree = "<group>"; };
+		AA9FD422276B309300191956 /* DWPopOriginalInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWPopOriginalInfo.swift; sourceTree = "<group>"; };
+		AA9FD428276B37FC00191956 /* DWPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWPopView.swift; sourceTree = "<group>"; };
+		AA9FD42A276B3A6300191956 /* DWMaskAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWMaskAppearance.swift; sourceTree = "<group>"; };
+		AA9FD42D276B3FA900191956 /* DWPopContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWPopContext.swift; sourceTree = "<group>"; };
+		AA9FD42F276B42F800191956 /* DWAdsore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWAdsore.swift; sourceTree = "<group>"; };
+		AA9FD431276B482D00191956 /* PopCompatiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopCompatiable.swift; sourceTree = "<group>"; };
+		AA9FD433276B48A500191956 /* Pop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pop.swift; sourceTree = "<group>"; };
 		AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWAnimationButton.swift; sourceTree = "<group>"; };
+		AAC45CC22766FEAF00482837 /* DWVisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWVisionManager.swift; sourceTree = "<group>"; };
+		AAC45CC627671DEC00482837 /* DWBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWBehavior.swift; sourceTree = "<group>"; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
 		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
 		AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecognizerManager.swift; sourceTree = "<group>"; };
@@ -262,6 +305,216 @@
 				AA96C94527633F23001ED233 /* FPSManager.swift */,
 			);
 			path = Debug;
+			sourceTree = "<group>";
+		};
+		AA9FD3C42768393100191956 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD3C52768394F00191956 /* DWToastManager.swift */,
+				AA9FD3C72768395D00191956 /* DWPopManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		AA9FD3CD27683A1200191956 /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				AAC45CC627671DEC00482837 /* DWBehavior.swift */,
+				AA9FD3D027683AA800191956 /* DWBehaviorManager.swift */,
+				AA9FD3EE2768759D00191956 /* DWDefaultBehavior.swift */,
+				AA9FD3F0276875B100191956 /* DWAWaitBehavior.swift */,
+			);
+			path = Behavior;
+			sourceTree = "<group>";
+		};
+		AA9FD3CE27683A1B00191956 /* Adsore */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD42F276B42F800191956 /* DWAdsore.swift */,
+			);
+			path = Adsore;
+			sourceTree = "<group>";
+		};
+		AA9FD3CF27683A2100191956 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD42A276B3A6300191956 /* DWMaskAppearance.swift */,
+				AA9FD3C22768387000191956 /* DWAppearance.swift */,
+				AA9FD3D427683AC400191956 /* DWAppearanceManager.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		AA9FD3DA27683FC400191956 /* UIComponet */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD3E42768714B00191956 /* PopWindows */,
+			);
+			path = UIComponet;
+			sourceTree = "<group>";
+		};
+		AA9FD3E2276846FB00191956 /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD3E02768462A00191956 /* DWShowAnimator.swift */,
+				AA9FD3DE276841A700191956 /* DWShowManager.swift */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		AA9FD3E42768714B00191956 /* PopWindows */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD3C42768393100191956 /* Manager */,
+				AA9FD3E2276846FB00191956 /* Show */,
+				AA9FD3CD27683A1200191956 /* Behavior */,
+				AA9FD3CE27683A1B00191956 /* Adsore */,
+				AA9FD3CF27683A2100191956 /* Appearance */,
+				AA9FD3EB2768723100191956 /* NoModalPopup */,
+				AA9FD3EA2768721700191956 /* ModalPopup */,
+			);
+			path = PopWindows;
+			sourceTree = "<group>";
+		};
+		AA9FD3E52768715400191956 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Popover;
+			sourceTree = "<group>";
+		};
+		AA9FD3E62768715800191956 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		AA9FD3E7276871B200191956 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		AA9FD3E8276871E200191956 /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pop;
+			sourceTree = "<group>";
+		};
+		AA9FD3E9276871FE00191956 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		AA9FD3EA2768721700191956 /* ModalPopup */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD3E9276871FE00191956 /* Sheet */,
+				AA9FD3E8276871E200191956 /* Pop */,
+				AA9FD3E7276871B200191956 /* Dialog */,
+				AA9FD3E62768715800191956 /* Alert */,
+				AA9FD3E52768715400191956 /* Popover */,
+			);
+			path = ModalPopup;
+			sourceTree = "<group>";
+		};
+		AA9FD3EB2768723100191956 /* NoModalPopup */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD3ED2768725700191956 /* Toast */,
+				AA9FD3EC2768725400191956 /* Snackbar */,
+			);
+			path = NoModalPopup;
+			sourceTree = "<group>";
+		};
+		AA9FD3EC2768725400191956 /* Snackbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Snackbar;
+			sourceTree = "<group>";
+		};
+		AA9FD3ED2768725700191956 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		AA9FD415276B2D3A00191956 /* Generate */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD417276B2D9100191956 /* PopGenerate */,
+				AA9FD416276B2D6100191956 /* generate.md */,
+			);
+			path = Generate;
+			sourceTree = "<group>";
+		};
+		AA9FD417276B2D9100191956 /* PopGenerate */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD418276B2DA300191956 /* Front */,
+				AA9FD419276B2DC500191956 /* End */,
+			);
+			path = PopGenerate;
+			sourceTree = "<group>";
+		};
+		AA9FD418276B2DA300191956 /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD42C276B3E4200191956 /* Context */,
+				AA9FD428276B37FC00191956 /* DWPopView.swift */,
+				AA9FD41A276B2DE900191956 /* DWPopPreprocess.swift */,
+				AA9FD41C276B2F7800191956 /* DWPopOperation.swift */,
+				AA9FD422276B309300191956 /* DWPopOriginalInfo.swift */,
+			);
+			path = Front;
+			sourceTree = "<group>";
+		};
+		AA9FD419276B2DC500191956 /* End */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD420276B2FC900191956 /* DWPopProducer.swift */,
+				AA9FD431276B482D00191956 /* PopCompatiable.swift */,
+				AA9FD433276B48A500191956 /* Pop.swift */,
+			);
+			path = End;
+			sourceTree = "<group>";
+		};
+		AA9FD42C276B3E4200191956 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FD42D276B3FA900191956 /* DWPopContext.swift */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		AAC45CC02766FE9900482837 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				AAC45CC22766FEAF00482837 /* DWVisionManager.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		AAC45CC12766FEA000482837 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		AAC45CC427671CB700482837 /* AlbumManager */ = {
+			isa = PBXGroup;
+			children = (
+				AAFD0AE027632E11005821CA /* AlbumManager.swift */,
+			);
+			path = AlbumManager;
 			sourceTree = "<group>";
 		};
 		DA4E89D32746AFA600FABF97 /* View */ = {
@@ -748,7 +1001,6 @@
 				DA5E20DD27623F78009F6FD8 /* CameraCaptureManager.swift */,
 				AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */,
 				AAFD0ADE27632DBF005821CA /* CameraLayerManager.swift */,
-				AAFD0AE027632E11005821CA /* AlbumManager.swift */,
 				AAFD0AE227632E1E005821CA /* MetalManager.swift */,
 				DA560C7427639952001B7327 /* CameraSettingManager.swift */,
 			);
@@ -775,6 +1027,11 @@
 		DA6310A127552FB2005CACD7 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				AA9FD415276B2D3A00191956 /* Generate */,
+				AA9FD3DA27683FC400191956 /* UIComponet */,
+				AAC45CC427671CB700482837 /* AlbumManager */,
+				AAC45CC12766FEA000482837 /* Metal */,
+				AAC45CC02766FE9900482837 /* Vision */,
 				DA5E20DC27623F63009F6FD8 /* CameraManager */,
 				DA6310A8275530CE005CACD7 /* Networking */,
 			);
@@ -1046,47 +1303,66 @@
 				DAEC98CB276662CE00553C3F /* DeepLabV3.mlmodel in Sources */,
 				AA96C94027633E2A001ED233 /* DebugManager.swift in Sources */,
 				DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */,
+				AAC45CC32766FEAF00482837 /* DWVisionManager.swift in Sources */,
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
 				DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */,
+				AA9FD421276B2FC900191956 /* DWPopProducer.swift in Sources */,
 				DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */,
 				DA6310AC2755310B005CACD7 /* MoyaConfig.swift in Sources */,
 				AA96C94227633E9B001ED233 /* VMemoryManager.swift in Sources */,
 				DA560C7527639952001B7327 /* CameraSettingManager.swift in Sources */,
 				DA6310A727553087005CACD7 /* APIUser.swift in Sources */,
+				AA9FD42E276B3FA900191956 /* DWPopContext.swift in Sources */,
 				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
 				DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */,
 				AAB081652750EE5D0086EE92 /* DWAnimationButton.swift in Sources */,
 				DA5D927E2742B13900699555 /* JJActionItem.swift in Sources */,
+				AA9FD3F1276875B100191956 /* DWAWaitBehavior.swift in Sources */,
+				AA9FD432276B482D00191956 /* PopCompatiable.swift in Sources */,
 				DA5D927D2742B13900699555 /* AnimationConfiguration.swift in Sources */,
+				AA9FD3EF2768759D00191956 /* DWDefaultBehavior.swift in Sources */,
 				DA6310AA275530DA005CACD7 /* API.swift in Sources */,
 				DA5D92812742B13900699555 /* UIColor+JJFloatingActionButton.swift in Sources */,
 				DA5D92832742B13900699555 /* LayerProperties.swift in Sources */,
 				DA5D922527404A9000699555 /* DWTabBarController.swift in Sources */,
+				AAC45CC727671DEC00482837 /* DWBehavior.swift in Sources */,
+				AA9FD3D127683AA800191956 /* DWBehaviorManager.swift in Sources */,
 				DA5D927C2742B13900699555 /* Styles.swift in Sources */,
+				AA9FD429276B37FC00191956 /* DWPopView.swift in Sources */,
 				DA5D92852742B13900699555 /* JJCircleView.swift in Sources */,
+				AA9FD430276B42F800191956 /* DWAdsore.swift in Sources */,
 				DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */,
+				AA9FD423276B309300191956 /* DWPopOriginalInfo.swift in Sources */,
 				DA5D91DA274032B200699555 /* DatawhaleApp.xcdatamodeld in Sources */,
 				DA5D92362741067900699555 /* Color+Tone.swift in Sources */,
 				DA5E20DB27623815009F6FD8 /* DWCameraBottomView.swift in Sources */,
+				AA9FD41B276B2DE900191956 /* DWPopPreprocess.swift in Sources */,
 				DA560C73276258BA001B7327 /* DWCameraViewModel.swift in Sources */,
 				DA5E20D927623736009F6FD8 /* DWCameraViewController.swift in Sources */,
 				AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */,
+				AA9FD434276B48A500191956 /* Pop.swift in Sources */,
 				AA96C94627633F23001ED233 /* FPSManager.swift in Sources */,
+				AA9FD41D276B2F7800191956 /* DWPopOperation.swift in Sources */,
 				DA5D92792742B13900699555 /* JJFloatingActionButton+Animation.swift in Sources */,
 				DA5D92552741552B00699555 /* DWClouseDefines.swift in Sources */,
 				DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */,
+				AA9FD3DF276841A700191956 /* DWShowManager.swift in Sources */,
 				DA5E20DE27623F78009F6FD8 /* CameraCaptureManager.swift in Sources */,
+				AA9FD3E12768462A00191956 /* DWShowAnimator.swift in Sources */,
 				DA5D92892742B93B00699555 /* DWHomeBoardCell.swift in Sources */,
 				DA6310AE2755315E005CACD7 /* NetworkManager.swift in Sources */,
+				AA9FD3C62768394F00191956 /* DWToastManager.swift in Sources */,
 				AAFD0AE327632E1E005821CA /* MetalManager.swift in Sources */,
 				DA5D92302741053600699555 /* DWTabBar.swift in Sources */,
 				DA5D928F2742BB2200699555 /* CAGradientLayer+Extension.swift in Sources */,
+				AA9FD3C32768387000191956 /* DWAppearance.swift in Sources */,
 				DA5D91D0274032B200699555 /* AppDelegate.swift in Sources */,
 				AAFD0ADF27632DBF005821CA /* CameraLayerManager.swift in Sources */,
 				DA5D927F2742B13900699555 /* JJFloatingActionButtonState.swift in Sources */,
 				DA63109D275519CC005CACD7 /* User.swift in Sources */,
 				AA3CDEE7274BAC3500670C1D /* Operator.swift in Sources */,
 				DA5D927B2742B13900699555 /* JJFloatingActionButtonDelegate.swift in Sources */,
+				AA9FD3C82768395D00191956 /* DWPopManager.swift in Sources */,
 				DA6310A427552FE2005CACD7 /* APILogin.swift in Sources */,
 				DA5D9261274159AA00699555 /* UIDevice+DWExtension.m in Sources */,
 				DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */,
@@ -1099,6 +1375,8 @@
 				AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */,
 				DA5D928C2742BA6600699555 /* DWCustomTitleImageButton.swift in Sources */,
 				AAFD0AE127632E11005821CA /* AlbumManager.swift in Sources */,
+				AA9FD3D527683AC400191956 /* DWAppearanceManager.swift in Sources */,
+				AA9FD42B276B3A6300191956 /* DWMaskAppearance.swift in Sources */,
 				DA5D92802742B13900699555 /* JJActionItemTitlePosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1292,7 +1570,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1329,7 +1607,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

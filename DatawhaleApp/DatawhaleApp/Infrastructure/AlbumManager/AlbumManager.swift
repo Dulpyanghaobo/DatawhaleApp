@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+
+
+struct AlbumManager {
+    static let shared = AlbumManager()
+
+    private init() {
+        
+    }
+}
