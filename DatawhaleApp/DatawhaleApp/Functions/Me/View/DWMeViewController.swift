@@ -44,7 +44,7 @@ class DWMeViewController: UIViewController {
     private let loginButton : UIButton = {
         let button = UIButton()
         button.setTitle("进入登录界面", for: .normal)
-        button.backgroundColor = UIColor.brandBlueColor()
+        button.backgroundColor = UIColor.brandBlue()
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 22
         button.layer.masksToBounds = true

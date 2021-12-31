@@ -107,7 +107,6 @@ PODS:
   - nanopb/encode (2.30908.0)
   - ObjectMapper (4.2.0)
   - PromisesObjC (2.0.0)
-  - PullToRefresher (3.3)
   - ReSwift (6.1.0)
   - SkeletonView (1.26.0)
   - SnapKit (5.0.1)
@@ -123,7 +122,6 @@ DEPENDENCIES:
   - Moya
   - Moya/Combine
   - ObjectMapper
-  - PullToRefresher
   - ReSwift
   - SkeletonView
   - SnapKit
@@ -149,7 +147,6 @@ SPEC REPOS:
     - nanopb
     - ObjectMapper
     - PromisesObjC
-    - PullToRefresher
     - ReSwift
     - SkeletonView
     - SnapKit
@@ -174,7 +171,6 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
-  PullToRefresher: 6fc2ab6494caf949bcf6f0223ffd23f9d21a06f6
   ReSwift: eab3c01e4279ba81b54a61e4fd6499634d20123a
   SkeletonView: 6b62a8ddbc64abb113ea3243e4a9979e5750f147
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
@@ -182,6 +178,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
 
-PODFILE CHECKSUM: 3c868881195bdc87b40309a3f44159d59e6c0946
+PODFILE CHECKSUM: bea509094324286e85536f502ebd8f154d118414
 
 COCOAPODS: 1.11.2

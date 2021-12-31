@@ -40,7 +40,6 @@
 		AACD6F98277D610800D4CC8B /* UIVisualEffectView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6F96277D610800D4CC8B /* UIVisualEffectView+Extension.swift */; };
 		AACD6F99277D610800D4CC8B /* DWVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6F97277D610800D4CC8B /* DWVisualEffectView.swift */; };
 		AACD6FA6277D866600D4CC8B /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FA5277D866600D4CC8B /* TaskViewController.swift */; };
-		AACD6FA8277D876C00D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FA7277D876C00D4CC8B /* InfoPlist.strings */; };
 		AACD6FB9277D8AAC00D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FB4277D8AAC00D4CC8B /* InfoPlist.strings */; };
 		AACD6FBA277D8AAC00D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FB7277D8AAC00D4CC8B /* InfoPlist.strings */; };
 		AACD6FBD277D8DBB00D4CC8B /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FBC277D8DBB00D4CC8B /* UITableViewExtensions.swift */; };
@@ -53,6 +52,8 @@
 		AACD6FD5277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FD0277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
 		AACD6FD6277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FD1277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift */; };
 		AACD6FD7277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FD2277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift */; };
+		AACD6FD8277EA77000D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FDA277EA77000D4CC8B /* InfoPlist.strings */; };
+		AACD6FE2277EA7A900D4CC8B /* TaskDetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FE1277EA7A900D4CC8B /* TaskDetailContentView.swift */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
 		AAFD0ADD27632DB0005821CA /* CameraRecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */; };
@@ -169,7 +170,6 @@
 		AACD6F96277D610800D4CC8B /* UIVisualEffectView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVisualEffectView+Extension.swift"; sourceTree = "<group>"; };
 		AACD6F97277D610800D4CC8B /* DWVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWVisualEffectView.swift; sourceTree = "<group>"; };
 		AACD6FA5277D866600D4CC8B /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
-		AACD6FA7277D876C00D4CC8B /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		AACD6FAB277D87D100D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AACD6FAC277D87D100D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		AACD6FB5277D8AAC00D4CC8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
@@ -184,6 +184,9 @@
 		AACD6FD0277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
 		AACD6FD1277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshConstants.swift; sourceTree = "<group>"; };
 		AACD6FD2277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
+		AACD6FD9277EA77000D4CC8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AACD6FDB277EA77200D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		AACD6FE1277EA7A900D4CC8B /* TaskDetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailContentView.swift; sourceTree = "<group>"; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
 		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
 		AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecognizerManager.swift; sourceTree = "<group>"; };
@@ -656,6 +659,22 @@
 			path = Refresh;
 			sourceTree = "<group>";
 		};
+		AACD6FDC277EA77900D4CC8B /* TaskDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AACD6FE0277EA79100D4CC8B /* ViewModel */,
+				AACD6FE1277EA7A900D4CC8B /* TaskDetailContentView.swift */,
+			);
+			path = TaskDetail;
+			sourceTree = "<group>";
+		};
+		AACD6FE0277EA79100D4CC8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DA4E89D32746AFA600FABF97 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -851,10 +870,11 @@
 		DA5D920E27403FCB00699555 /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				AACD6FDC277EA77900D4CC8B /* TaskDetail */,
 				AACD6FA4277D861A00D4CC8B /* ViewController */,
 				AACD6F9B277D626D00D4CC8B /* ViewModel */,
 				AACD6F9A277D626800D4CC8B /* View */,
-				AACD6FA7277D876C00D4CC8B /* InfoPlist.strings */,
+				AACD6FDA277EA77000D4CC8B /* InfoPlist.strings */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -1318,7 +1338,7 @@
 				DA5D91DC274032B400699555 /* Assets.xcassets in Resources */,
 				DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */,
 				DA5D91D7274032B200699555 /* Main.storyboard in Resources */,
-				AACD6FA8277D876C00D4CC8B /* InfoPlist.strings in Resources */,
+				AACD6FD8277EA77000D4CC8B /* InfoPlist.strings in Resources */,
 				AACD6FC9277DCC4100D4CC8B /* pull_refresh_loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1484,6 +1504,7 @@
 				DA5D927C2742B13900699555 /* Styles.swift in Sources */,
 				AA9FD429276B37FC00191956 /* DWPopView.swift in Sources */,
 				DA5D92852742B13900699555 /* JJCircleView.swift in Sources */,
+				AACD6FE2277EA7A900D4CC8B /* TaskDetailContentView.swift in Sources */,
 				AA9FD430276B42F800191956 /* DWAdsore.swift in Sources */,
 				DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */,
 				AACD6F98277D610800D4CC8B /* UIVisualEffectView+Extension.swift in Sources */,
@@ -1586,6 +1607,15 @@
 			isa = PBXVariantGroup;
 			children = (
 				AACD6FB8277D8AAC00D4CC8B /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AACD6FDA277EA77000D4CC8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AACD6FD9277EA77000D4CC8B /* en */,
+				AACD6FDB277EA77200D4CC8B /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

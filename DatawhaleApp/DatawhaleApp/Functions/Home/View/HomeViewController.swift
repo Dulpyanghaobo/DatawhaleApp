@@ -35,11 +35,11 @@ class HomeViewController: UIViewController {
         loadingView.tintColor = UIColor(red: 78/255.0, green: 221/255.0, blue: 200/255.0, alpha: 1.0)
         collectionView.dg_addPullToRefreshWithActionHandler({
             () -> Void in
-               DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(1.5 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5, execute: {
                    collectionView.dg_stopLoading()
                })
         }, loadingView: loadingView)
-        collectionView.dg_setPullToRefreshFillColor(UIColor(red: 57/255.0, green: 67/255.0, blue: 89/255.0, alpha: 1.0))
+        collectionView.dg_setPullToRefreshFillColor(UIColor.brandBlue())
         collectionView.dg_setPullToRefreshBackgroundColor(collectionView.backgroundColor!)
         collectionView.register(DWHomeBoardCell.self, forCellWithReuseIdentifier: DWHomeBoardCell.reuseIdentifier)
         return collectionView

@@ -46,7 +46,7 @@ class DWTabBar: UITabBar ,DWFloatButtonActionDelegate{
         self.items?.map({
             $0.imageInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: -10, right: 0)
             $0.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.regularFont(11),NSAttributedString.Key.foregroundColor : UIColor.lightGray4()], for: .normal)
-            $0.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.regularFont(11),NSAttributedString.Key.foregroundColor : UIColor.brandBlueColor()], for: .selected)
+            $0.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.regularFont(11),NSAttributedString.Key.foregroundColor : UIColor.brandBlue()], for: .selected)
         })
         var tabBarButtonIndex = 0
         self.subviews.map { child in

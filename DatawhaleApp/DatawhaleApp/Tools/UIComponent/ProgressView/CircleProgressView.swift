@@ -41,7 +41,7 @@ class CircleProgressView: UIView {
         }
     }
     /// 线条填充色
-    public var pathFillColor: UIColor = UIColor.brandBlueColor() {
+    public var pathFillColor: UIColor = UIColor.brandBlue() {
         didSet {
             
         }

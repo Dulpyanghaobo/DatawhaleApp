@@ -89,11 +89,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PullToRefresher.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>ReSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
