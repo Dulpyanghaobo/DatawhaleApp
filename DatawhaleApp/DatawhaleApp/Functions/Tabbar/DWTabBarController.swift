@@ -11,7 +11,7 @@ class DWTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let homeViewController = DWHomeViewController.init()
+        let homeViewController = HomeViewController.init()
         let meViewController = DWMeViewController.init()
         let taskViewController = TaskViewController.init()
         let goalViewController = GoalViewController.init()

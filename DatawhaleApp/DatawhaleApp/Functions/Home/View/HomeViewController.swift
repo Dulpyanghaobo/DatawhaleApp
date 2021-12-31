@@ -7,10 +7,11 @@
 
 import UIKit
 
-class DWHomeViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints{
             $0.edges.equalToSuperview().inset(UIEdgeInsets.zero)
@@ -26,16 +27,30 @@ class DWHomeViewController: UIViewController {
         let collectionViewLayout = UICollectionViewFlowLayout()
         collectionViewLayout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
-        
         collectionView.backgroundColor = UIColor.lightGray6()
-        collectionView.bounces = true
+        // 确定接收器在其超视图边界更改时如何调整自身大小
+        collectionView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
+        collectionView.alwaysBounceVertical = true
+        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+        loadingView.tintColor = UIColor(red: 78/255.0, green: 221/255.0, blue: 200/255.0, alpha: 1.0)
+        collectionView.dg_addPullToRefreshWithActionHandler({
+            () -> Void in
+               DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(1.5 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
+                   collectionView.dg_stopLoading()
+               })
+        }, loadingView: loadingView)
+        collectionView.dg_setPullToRefreshFillColor(UIColor(red: 57/255.0, green: 67/255.0, blue: 89/255.0, alpha: 1.0))
+        collectionView.dg_setPullToRefreshBackgroundColor(collectionView.backgroundColor!)
         collectionView.register(DWHomeBoardCell.self, forCellWithReuseIdentifier: DWHomeBoardCell.reuseIdentifier)
         return collectionView
     } ()
-    
+    deinit {
+        collectionView.dg_removePullToRefresh()
+    }
+
 }
 
-extension DWHomeViewController
+extension HomeViewController
 {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -52,7 +67,7 @@ extension DWHomeViewController
     }
 }
 
-extension DWHomeViewController : UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource
+extension HomeViewController : UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return DWHomeBoardCell.size
@@ -71,3 +86,5 @@ extension DWHomeViewController : UICollectionViewDelegateFlowLayout,UICollection
         
     }
 }
+
+

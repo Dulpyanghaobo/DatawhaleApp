@@ -48,6 +48,11 @@
 		AACD6FC3277DA3A000D4CC8B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FC2277DA3A000D4CC8B /* UIViewController+Extension.swift */; };
 		AACD6FC5277DA3F100D4CC8B /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FC4277DA3F100D4CC8B /* UINavigationController+Extension.swift */; };
 		AACD6FC9277DCC4100D4CC8B /* pull_refresh_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FC8277DCC4100D4CC8B /* pull_refresh_loading.json */; };
+		AACD6FD3277EA0FC00D4CC8B /* DGElasticPullToRefreshExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FCE277EA0FC00D4CC8B /* DGElasticPullToRefreshExtensions.swift */; };
+		AACD6FD4277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FCF277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingView.swift */; };
+		AACD6FD5277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FD0277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
+		AACD6FD6277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FD1277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift */; };
+		AACD6FD7277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FD2277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
 		AAFD0ADD27632DB0005821CA /* CameraRecognizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */; };
@@ -68,7 +73,7 @@
 		DA5D91F4274032B400699555 /* DatawhaleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91F3274032B400699555 /* DatawhaleAppUITests.swift */; };
 		DA5D91F6274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D91F5274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift */; };
 		DA5D922527404A9000699555 /* DWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D922427404A9000699555 /* DWTabBarController.swift */; };
-		DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92282741027D00699555 /* DWHomeViewController.swift */; };
+		DA5D92292741027D00699555 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92282741027D00699555 /* HomeViewController.swift */; };
 		DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D922C274102A000699555 /* DWMeViewController.swift */; };
 		DA5D92302741053600699555 /* DWTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D922F2741053600699555 /* DWTabBar.swift */; };
 		DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5D92322741058500699555 /* UIColor+Extension.swift */; };
@@ -174,6 +179,11 @@
 		AACD6FC2277DA3A000D4CC8B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		AACD6FC4277DA3F100D4CC8B /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		AACD6FC8277DCC4100D4CC8B /* pull_refresh_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pull_refresh_loading.json; sourceTree = "<group>"; };
+		AACD6FCE277EA0FC00D4CC8B /* DGElasticPullToRefreshExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshExtensions.swift; sourceTree = "<group>"; };
+		AACD6FCF277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingView.swift; sourceTree = "<group>"; };
+		AACD6FD0277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
+		AACD6FD1277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshConstants.swift; sourceTree = "<group>"; };
+		AACD6FD2277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
 		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
 		AAFD0ADC27632DB0005821CA /* CameraRecognizerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecognizerManager.swift; sourceTree = "<group>"; };
@@ -201,7 +211,7 @@
 		DA5D91F3274032B400699555 /* DatawhaleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatawhaleAppUITests.swift; sourceTree = "<group>"; };
 		DA5D91F5274032B400699555 /* DatawhaleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatawhaleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DA5D922427404A9000699555 /* DWTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWTabBarController.swift; sourceTree = "<group>"; };
-		DA5D92282741027D00699555 /* DWHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeViewController.swift; sourceTree = "<group>"; };
+		DA5D92282741027D00699555 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DA5D922C274102A000699555 /* DWMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWMeViewController.swift; sourceTree = "<group>"; };
 		DA5D922F2741053600699555 /* DWTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWTabBar.swift; sourceTree = "<group>"; };
 		DA5D92322741058500699555 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -366,6 +376,7 @@
 		AA9FD3DA27683FC400191956 /* UIComponet */ = {
 			isa = PBXGroup;
 			children = (
+				AACD6FCB277E9B3200D4CC8B /* Refresh */,
 				AACD6FA2277D65EE00D4CC8B /* CollectionView */,
 				AACD6FA1277D65E700D4CC8B /* TableView */,
 				AACD6FA0277D65D600D4CC8B /* Color */,
@@ -631,6 +642,18 @@
 				AACD6FC4277DA3F100D4CC8B /* UINavigationController+Extension.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		AACD6FCB277E9B3200D4CC8B /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				AACD6FD1277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift */,
+				AACD6FCE277EA0FC00D4CC8B /* DGElasticPullToRefreshExtensions.swift */,
+				AACD6FCF277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingView.swift */,
+				AACD6FD0277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift */,
+				AACD6FD2277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift */,
+			);
+			path = Refresh;
 			sourceTree = "<group>";
 		};
 		DA4E89D32746AFA600FABF97 /* View */ = {
@@ -949,7 +972,7 @@
 		DA5D92262741026300699555 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA5D92282741027D00699555 /* DWHomeViewController.swift */,
+				DA5D92282741027D00699555 /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1424,17 +1447,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5D92292741027D00699555 /* DWHomeViewController.swift in Sources */,
+				DA5D92292741027D00699555 /* HomeViewController.swift in Sources */,
 				DA5D92562741552B00699555 /* DWQuoteDefines.swift in Sources */,
 				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
 				AA96C94027633E2A001ED233 /* DebugManager.swift in Sources */,
 				DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */,
 				AAC45CC32766FEAF00482837 /* DWVisionManager.swift in Sources */,
+				AACD6FD7277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift in Sources */,
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
 				DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */,
 				AA9FD421276B2FC900191956 /* DWPopProducer.swift in Sources */,
+				AACD6FD6277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift in Sources */,
 				DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */,
 				DA6310AC2755310B005CACD7 /* MoyaConfig.swift in Sources */,
+				AACD6FD4277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 				AA96C94227633E9B001ED233 /* VMemoryManager.swift in Sources */,
 				DA560C7527639952001B7327 /* CameraSettingManager.swift in Sources */,
 				DA6310A727553087005CACD7 /* APIUser.swift in Sources */,
@@ -1462,7 +1488,9 @@
 				DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */,
 				AACD6F98277D610800D4CC8B /* UIVisualEffectView+Extension.swift in Sources */,
 				AA9FD423276B309300191956 /* DWPopOriginalInfo.swift in Sources */,
+				AACD6FD3277EA0FC00D4CC8B /* DGElasticPullToRefreshExtensions.swift in Sources */,
 				DA5D91DA274032B200699555 /* DatawhaleApp.xcdatamodeld in Sources */,
+				AACD6FD5277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
 				DA5D92362741067900699555 /* Color+Tone.swift in Sources */,
 				DA5E20DB27623815009F6FD8 /* DWCameraBottomView.swift in Sources */,
 				AA9FD41B276B2DE900191956 /* DWPopPreprocess.swift in Sources */,
