@@ -12,6 +12,6 @@ import PhotosUI
 struct AlbumManager {
     static let shared = AlbumManager.init()
     
-    func
+//    func
 
 }
