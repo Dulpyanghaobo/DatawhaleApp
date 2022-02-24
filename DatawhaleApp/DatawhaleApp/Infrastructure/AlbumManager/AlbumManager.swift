@@ -6,13 +6,12 @@
 //
 
 import Foundation
-
+import PhotosUI
 
 
 struct AlbumManager {
-    static let shared = AlbumManager()
+    static let shared = AlbumManager.init()
+    
+    func
 
-    private init() {
-        
-    }
 }

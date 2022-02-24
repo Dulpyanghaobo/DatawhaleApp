@@ -16,7 +16,7 @@ target 'DatawhaleApp' do
     pod 'SwiftDate'
     pod 'URLNavigator'
     pod 'ReSwift'
-    pod 'SkeletonView'
+#    pod 'SkeletonView'
   target 'DatawhaleAppTests' do
     inherit! :search_paths
   end

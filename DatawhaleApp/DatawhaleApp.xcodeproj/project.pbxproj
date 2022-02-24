@@ -35,13 +35,11 @@
 		AA9FD432276B482D00191956 /* PopCompatiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD431276B482D00191956 /* PopCompatiable.swift */; };
 		AA9FD434276B48A500191956 /* Pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FD433276B48A500191956 /* Pop.swift */; };
 		AAB081652750EE5D0086EE92 /* DWAnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */; };
-		AAC45CC32766FEAF00482837 /* DWVisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC45CC22766FEAF00482837 /* DWVisionManager.swift */; };
+		AAC45CC32766FEAF00482837 /* DWImageProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC45CC22766FEAF00482837 /* DWImageProcess.swift */; };
 		AAC45CC727671DEC00482837 /* DWBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC45CC627671DEC00482837 /* DWBehavior.swift */; };
 		AACD6F98277D610800D4CC8B /* UIVisualEffectView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6F96277D610800D4CC8B /* UIVisualEffectView+Extension.swift */; };
 		AACD6F99277D610800D4CC8B /* DWVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6F97277D610800D4CC8B /* DWVisualEffectView.swift */; };
 		AACD6FA6277D866600D4CC8B /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FA5277D866600D4CC8B /* TaskViewController.swift */; };
-		AACD6FB9277D8AAC00D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FB4277D8AAC00D4CC8B /* InfoPlist.strings */; };
-		AACD6FBA277D8AAC00D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FB7277D8AAC00D4CC8B /* InfoPlist.strings */; };
 		AACD6FBD277D8DBB00D4CC8B /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FBC277D8DBB00D4CC8B /* UITableViewExtensions.swift */; };
 		AACD6FC0277D9E8300D4CC8B /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FBF277D9E8300D4CC8B /* GoalViewController.swift */; };
 		AACD6FC3277DA3A000D4CC8B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FC2277DA3A000D4CC8B /* UIViewController+Extension.swift */; };
@@ -52,7 +50,6 @@
 		AACD6FD5277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FD0277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
 		AACD6FD6277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FD1277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift */; };
 		AACD6FD7277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FD2277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift */; };
-		AACD6FD8277EA77000D4CC8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AACD6FDA277EA77000D4CC8B /* InfoPlist.strings */; };
 		AACD6FE2277EA7A900D4CC8B /* TaskDetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD6FE1277EA7A900D4CC8B /* TaskDetailContentView.swift */; };
 		AACDD62B2743955600C93A8D /* DWNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62A2743955600C93A8D /* DWNavigator.swift */; };
 		AACDD62D2743AD1400C93A8D /* DWHomeSleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */; };
@@ -113,6 +110,14 @@
 		DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD408A927498D04008C04AE /* GoogleService-Info.plist */; };
 		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
 		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
+		FACD78EE27C76801006AE674 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD78ED27C76801006AE674 /* Greeting.swift */; };
+		FACD78F127C76DA5006AE674 /* ImageCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD78F027C76DA5006AE674 /* ImageCombine.swift */; };
+		FACD78F427C76F3F006AE674 /* DWFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD78F327C76F3F006AE674 /* DWFilter.swift */; };
+		FACD78FC27C77A63006AE674 /* ProcessResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD78FB27C77A63006AE674 /* ProcessResultViewController.swift */; };
+		FACD78FE27C77BAC006AE674 /* ResultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD78FD27C77BAC006AE674 /* ResultRouter.swift */; };
+		FACD790127C77C93006AE674 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD790027C77C93006AE674 /* Router.swift */; };
+		FACD790327C786E4006AE674 /* RouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD790227C786E4006AE674 /* RouterFactory.swift */; };
+		FACD790727C78871006AE674 /* RouterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD790627C78871006AE674 /* RouterAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,15 +170,13 @@
 		AA9FD431276B482D00191956 /* PopCompatiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopCompatiable.swift; sourceTree = "<group>"; };
 		AA9FD433276B48A500191956 /* Pop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pop.swift; sourceTree = "<group>"; };
 		AAB081642750EE5D0086EE92 /* DWAnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWAnimationButton.swift; sourceTree = "<group>"; };
-		AAC45CC22766FEAF00482837 /* DWVisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWVisionManager.swift; sourceTree = "<group>"; };
+		AAC45CC22766FEAF00482837 /* DWImageProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWImageProcess.swift; sourceTree = "<group>"; };
 		AAC45CC627671DEC00482837 /* DWBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWBehavior.swift; sourceTree = "<group>"; };
 		AACD6F96277D610800D4CC8B /* UIVisualEffectView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVisualEffectView+Extension.swift"; sourceTree = "<group>"; };
 		AACD6F97277D610800D4CC8B /* DWVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWVisualEffectView.swift; sourceTree = "<group>"; };
 		AACD6FA5277D866600D4CC8B /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		AACD6FAB277D87D100D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		AACD6FAC277D87D100D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		AACD6FB5277D8AAC00D4CC8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		AACD6FB8277D8AAC00D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = InfoPlist.strings; sourceTree = "<group>"; };
 		AACD6FBC277D8DBB00D4CC8B /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		AACD6FBF277D9E8300D4CC8B /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		AACD6FC2277DA3A000D4CC8B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -184,8 +187,6 @@
 		AACD6FD0277EA0FC00D4CC8B /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
 		AACD6FD1277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshConstants.swift; sourceTree = "<group>"; };
 		AACD6FD2277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
-		AACD6FD9277EA77000D4CC8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AACD6FDB277EA77200D4CC8B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		AACD6FE1277EA7A900D4CC8B /* TaskDetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailContentView.swift; sourceTree = "<group>"; };
 		AACDD62A2743955600C93A8D /* DWNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNavigator.swift; sourceTree = "<group>"; };
 		AACDD62C2743AD1400C93A8D /* DWHomeSleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeSleepCell.swift; sourceTree = "<group>"; };
@@ -256,6 +257,14 @@
 		DAD408A927498D04008C04AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FACD78ED27C76801006AE674 /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
+		FACD78F027C76DA5006AE674 /* ImageCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCombine.swift; sourceTree = "<group>"; };
+		FACD78F327C76F3F006AE674 /* DWFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWFilter.swift; sourceTree = "<group>"; };
+		FACD78FB27C77A63006AE674 /* ProcessResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessResultViewController.swift; sourceTree = "<group>"; };
+		FACD78FD27C77BAC006AE674 /* ResultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRouter.swift; sourceTree = "<group>"; };
+		FACD790027C77C93006AE674 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FACD790227C786E4006AE674 /* RouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFactory.swift; sourceTree = "<group>"; };
+		FACD790627C78871006AE674 /* RouterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -534,7 +543,7 @@
 		AAC45CC02766FE9900482837 /* Vision */ = {
 			isa = PBXGroup;
 			children = (
-				AAC45CC22766FEAF00482837 /* DWVisionManager.swift */,
+				AAC45CC22766FEAF00482837 /* DWImageProcess.swift */,
 			);
 			path = Vision;
 			sourceTree = "<group>";
@@ -612,22 +621,6 @@
 				AACD6FA5277D866600D4CC8B /* TaskViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		AACD6FB3277D8AAC00D4CC8B /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				AACD6FB4277D8AAC00D4CC8B /* InfoPlist.strings */,
-			);
-			path = en.lproj;
-			sourceTree = "<group>";
-		};
-		AACD6FB6277D8AAC00D4CC8B /* zh-Hans.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				AACD6FB7277D8AAC00D4CC8B /* InfoPlist.strings */,
-			);
-			path = "zh-Hans.lproj";
 			sourceTree = "<group>";
 		};
 		AACD6FBE277D9E6700D4CC8B /* Goal */ = {
@@ -765,6 +758,8 @@
 		DA5D920327403B9800699555 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				FACD78FF27C77C86006AE674 /* Router */,
+				FACD78F927C77A26006AE674 /* ProcessResult */,
 				DA5D922E2741052200699555 /* Tabbar */,
 				DA5D921E274043CF00699555 /* Base */,
 				DA5D92132740400B00699555 /* Guide */,
@@ -807,8 +802,6 @@
 		DA5D920627403BC600699555 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AACD6FB3277D8AAC00D4CC8B /* en.lproj */,
-				AACD6FB6277D8AAC00D4CC8B /* zh-Hans.lproj */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -874,7 +867,6 @@
 				AACD6FA4277D861A00D4CC8B /* ViewController */,
 				AACD6F9B277D626D00D4CC8B /* ViewModel */,
 				AACD6F9A277D626800D4CC8B /* View */,
-				AACD6FDA277EA77000D4CC8B /* InfoPlist.strings */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -1176,6 +1168,7 @@
 			isa = PBXGroup;
 			children = (
 				DA63109C275519CC005CACD7 /* User.swift */,
+				FACD78ED27C76801006AE674 /* Greeting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1192,11 +1185,11 @@
 		DA6310A127552FB2005CACD7 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				FACD78EC27C762ED006AE674 /* Process */,
 				AA9FD415276B2D3A00191956 /* Generate */,
 				AA9FD3DA27683FC400191956 /* UIComponet */,
 				AAC45CC427671CB700482837 /* AlbumManager */,
 				AAC45CC12766FEA000482837 /* Metal */,
-				AAC45CC02766FE9900482837 /* Vision */,
 				DA5E20DC27623F63009F6FD8 /* CameraManager */,
 				DA6310A8275530CE005CACD7 /* Networking */,
 			);
@@ -1219,6 +1212,59 @@
 				DA6310AD2755315E005CACD7 /* NetworkManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		FACD78EC27C762ED006AE674 /* Process */ = {
+			isa = PBXGroup;
+			children = (
+				FACD78F227C76F30006AE674 /* CIFilter */,
+				FACD78EF27C76D8B006AE674 /* Combine */,
+				AAC45CC02766FE9900482837 /* Vision */,
+			);
+			path = Process;
+			sourceTree = "<group>";
+		};
+		FACD78EF27C76D8B006AE674 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				FACD78F027C76DA5006AE674 /* ImageCombine.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		FACD78F227C76F30006AE674 /* CIFilter */ = {
+			isa = PBXGroup;
+			children = (
+				FACD78F327C76F3F006AE674 /* DWFilter.swift */,
+			);
+			path = CIFilter;
+			sourceTree = "<group>";
+		};
+		FACD78F927C77A26006AE674 /* ProcessResult */ = {
+			isa = PBXGroup;
+			children = (
+				FACD78FA27C77A4E006AE674 /* ViewModel */,
+				FACD78FB27C77A63006AE674 /* ProcessResultViewController.swift */,
+			);
+			path = ProcessResult;
+			sourceTree = "<group>";
+		};
+		FACD78FA27C77A4E006AE674 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FACD78FF27C77C86006AE674 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FACD790027C77C93006AE674 /* Router.swift */,
+				FACD78FD27C77BAC006AE674 /* ResultRouter.swift */,
+				FACD790227C786E4006AE674 /* RouterFactory.swift */,
+				FACD790627C78871006AE674 /* RouterAction.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1333,12 +1379,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5D91DF274032B400699555 /* LaunchScreen.storyboard in Resources */,
-				AACD6FBA277D8AAC00D4CC8B /* InfoPlist.strings in Resources */,
-				AACD6FB9277D8AAC00D4CC8B /* InfoPlist.strings in Resources */,
 				DA5D91DC274032B400699555 /* Assets.xcassets in Resources */,
 				DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */,
 				DA5D91D7274032B200699555 /* Main.storyboard in Resources */,
-				AACD6FD8277EA77000D4CC8B /* InfoPlist.strings in Resources */,
 				AACD6FC9277DCC4100D4CC8B /* pull_refresh_loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1469,10 +1512,9 @@
 			files = (
 				DA5D92292741027D00699555 /* HomeViewController.swift in Sources */,
 				DA5D92562741552B00699555 /* DWQuoteDefines.swift in Sources */,
-				DA5D9221274043EE00699555 /* DWBaseViewController.swift in Sources */,
 				AA96C94027633E2A001ED233 /* DebugManager.swift in Sources */,
 				DA5D926627428B7B00699555 /* DWFloatButton.swift in Sources */,
-				AAC45CC32766FEAF00482837 /* DWVisionManager.swift in Sources */,
+				AAC45CC32766FEAF00482837 /* DWImageProcess.swift in Sources */,
 				AACD6FD7277EA0FC00D4CC8B /* DGElasticPullToRefreshView.swift in Sources */,
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
 				DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */,
@@ -1484,16 +1526,21 @@
 				AA96C94227633E9B001ED233 /* VMemoryManager.swift in Sources */,
 				DA560C7527639952001B7327 /* CameraSettingManager.swift in Sources */,
 				DA6310A727553087005CACD7 /* APIUser.swift in Sources */,
+				FACD790127C77C93006AE674 /* Router.swift in Sources */,
 				AACD6FA6277D866600D4CC8B /* TaskViewController.swift in Sources */,
 				AA9FD42E276B3FA900191956 /* DWPopContext.swift in Sources */,
 				DA5D92332741058500699555 /* UIColor+Extension.swift in Sources */,
+				FACD78FE27C77BAC006AE674 /* ResultRouter.swift in Sources */,
 				DA5D92842742B13900699555 /* JJFloatingActionButton.swift in Sources */,
+				FACD78F127C76DA5006AE674 /* ImageCombine.swift in Sources */,
 				AAB081652750EE5D0086EE92 /* DWAnimationButton.swift in Sources */,
 				DA5D927E2742B13900699555 /* JJActionItem.swift in Sources */,
 				AA9FD3F1276875B100191956 /* DWAWaitBehavior.swift in Sources */,
+				FACD790727C78871006AE674 /* RouterAction.swift in Sources */,
 				AA9FD432276B482D00191956 /* PopCompatiable.swift in Sources */,
 				DA5D927D2742B13900699555 /* AnimationConfiguration.swift in Sources */,
 				AA9FD3EF2768759D00191956 /* DWDefaultBehavior.swift in Sources */,
+				FACD78EE27C76801006AE674 /* Greeting.swift in Sources */,
 				DA6310AA275530DA005CACD7 /* API.swift in Sources */,
 				DA5D92812742B13900699555 /* UIColor+JJFloatingActionButton.swift in Sources */,
 				DA5D92832742B13900699555 /* LayerProperties.swift in Sources */,
@@ -1507,6 +1554,7 @@
 				AACD6FE2277EA7A900D4CC8B /* TaskDetailContentView.swift in Sources */,
 				AA9FD430276B42F800191956 /* DWAdsore.swift in Sources */,
 				DA5D922D274102A000699555 /* DWMeViewController.swift in Sources */,
+				FACD78FC27C77A63006AE674 /* ProcessResultViewController.swift in Sources */,
 				AACD6F98277D610800D4CC8B /* UIVisualEffectView+Extension.swift in Sources */,
 				AA9FD423276B309300191956 /* DWPopOriginalInfo.swift in Sources */,
 				AACD6FD3277EA0FC00D4CC8B /* DGElasticPullToRefreshExtensions.swift in Sources */,
@@ -1522,6 +1570,7 @@
 				AA96C94627633F23001ED233 /* FPSManager.swift in Sources */,
 				AA9FD41D276B2F7800191956 /* DWPopOperation.swift in Sources */,
 				DA5D92792742B13900699555 /* JJFloatingActionButton+Animation.swift in Sources */,
+				FACD78F427C76F3F006AE674 /* DWFilter.swift in Sources */,
 				DA5D92552741552B00699555 /* DWClouseDefines.swift in Sources */,
 				DA5D926427415E7100699555 /* UIFont+Extension.swift in Sources */,
 				AA9FD3DF276841A700191956 /* DWShowManager.swift in Sources */,
@@ -1545,6 +1594,7 @@
 				AA3CDEE7274BAC3500670C1D /* Operator.swift in Sources */,
 				DA5D927B2742B13900699555 /* JJFloatingActionButtonDelegate.swift in Sources */,
 				AA9FD3C82768395D00191956 /* DWPopManager.swift in Sources */,
+				FACD790327C786E4006AE674 /* RouterFactory.swift in Sources */,
 				DA6310A427552FE2005CACD7 /* APILogin.swift in Sources */,
 				DA5D9261274159AA00699555 /* UIDevice+DWExtension.m in Sources */,
 				DA5D92572741552B00699555 /* DWDeviceDefines.swift in Sources */,
@@ -1595,31 +1645,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AACD6FB4277D8AAC00D4CC8B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AACD6FB5277D8AAC00D4CC8B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AACD6FB7277D8AAC00D4CC8B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AACD6FB8277D8AAC00D4CC8B /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AACD6FDA277EA77000D4CC8B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AACD6FD9277EA77000D4CC8B /* en */,
-				AACD6FDB277EA77200D4CC8B /* zh-Hans */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		DA5D91D5274032B200699555 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -7,6 +7,7 @@
 
 import Foundation
 import AVFoundation
+import UIKit
 
 protocol DWCameraViewModelProtocol {
     
@@ -41,6 +42,7 @@ extension DWCameraViewModel : CameraCaptureManagerDelegate
 {
     func cameraCaptureManager(manager: CameraCaptureManager, didCaptureImageData imageData: NSData) {
         
+        ImageCombine.init().generateCombineImage(foregroundImageData: UIImage.init(data: imageData as Data), backgroundImage: UIImage.init())
     }
     
     func cameraCaptureManager(manager: CameraCaptureManager, didFailedWithError error: NSError) {

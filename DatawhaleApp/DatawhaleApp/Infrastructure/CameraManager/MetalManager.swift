@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import MetalKit
+
+struct MetalManager
+{
+    
+}

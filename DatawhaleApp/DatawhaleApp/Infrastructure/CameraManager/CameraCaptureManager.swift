@@ -15,7 +15,7 @@ protocol CameraCaptureManagerDelegate : NSObjectProtocol{
 
 /// 相机
 class CameraCaptureManager: NSObject {
-    
+        
     weak var delegate : CameraCaptureManagerDelegate?
     
     // 定义相机输入源
@@ -131,4 +131,5 @@ extension CameraCaptureManager : AVCapturePhotoCaptureDelegate
             self.delegate?.cameraCaptureManager(manager: self, didCaptureImageData: imageData! as NSData)
         }
     }
+    
 }
