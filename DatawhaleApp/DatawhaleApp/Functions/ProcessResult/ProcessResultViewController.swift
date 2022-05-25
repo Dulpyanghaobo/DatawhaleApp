@@ -20,7 +20,6 @@ class ProcessResultViewController: UIViewController {
         self.imageView.snp.makeConstraints { make in
             make.edges.equalToSuperview().inset(UIEdgeInsets.zero)
         }
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

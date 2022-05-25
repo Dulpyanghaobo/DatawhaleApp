@@ -96,27 +96,32 @@ class DWImageProcess {
     }
     
     
-//    func processVideoFrame(
-//      foreground: CVPixelBuffer,
-//      background: CGImage
-//    ) -> CIImage? {
-//      // Create request handler
-//      let ciForeground = CIImage(cvPixelBuffer: foreground)
-//      let personSegmentFilter = CIFilter.personSegmentation()
-//      personSegmentFilter.inputImage = ciForeground
-//      if let mask = personSegmentFilter.outputImage {
-//        guard let output = blendImages(
-//          background: CIImage(cgImage: background),
-//          foreground: ciForeground,
-//          mask: mask,
-//          isRedMask: true) else {
-//            print("Error blending images")
-//            return nil
-//          }
-//        return output
-//      }
-//      return nil
-//    }
+    /// 视频流图像处理
+    /// - Parameters:
+    ///   - foreground: 前面显示界面
+    ///   - background: 背景图
+    /// - Returns: 返回
+    func processVideoFrame(
+      foreground: CVPixelBuffer,
+      background: CGImage
+    ) -> CIImage? {
+      // Create request handler
+      let ciForeground = CIImage(cvPixelBuffer: foreground)
+      let personSegmentFilter = CIFilter.personSegmentation()
+      personSegmentFilter.inputImage = ciForeground
+      if let mask = personSegmentFilter.outputImage {
+        guard let output = blendImages(
+          background: CIImage(cgImage: background),
+          foreground: ciForeground,
+          mask: mask,
+          isRedMask: true) else {
+            print("Error blending images")
+            return nil
+          }
+        return output
+      }
+      return nil
+    }
     
     /// 图像合成算法
     /// - Parameters:

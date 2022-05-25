@@ -11,6 +11,8 @@ import AVFoundation
 protocol CameraCaptureManagerDelegate : NSObjectProtocol{
     func cameraCaptureManager(manager : CameraCaptureManager, didCaptureImageData imageData : NSData)
     func cameraCaptureManager(manager : CameraCaptureManager, didFailedWithError error : NSError)
+    /// 视频帧捕获数据
+    func cameraVideoSample(manager: CameraCaptureManager, image: CIImage?)
 }
 
 /// 相机
@@ -22,7 +24,7 @@ class CameraCaptureManager: NSObject {
     func configCameraSetting() {
         let lock = NSLock.init()
         lock.lock()
-        self.device = camera(with: .back)
+        self.device = camera(with: .front)
         do {
             guard let device = self.device else {
                 return
@@ -52,8 +54,8 @@ class CameraCaptureManager: NSObject {
     /// 开启相机
     public func captureImage() {
         do {
-            self.photoOutput .capturePhoto(with: self.photoSettings, delegate: self)
-        } catch let error as NSError {
+            self.photoOutput.capturePhoto(with: self.photoSettings, delegate: self)
+        } catch let _ as NSError {
             
         }
     }
@@ -67,6 +69,9 @@ class CameraCaptureManager: NSObject {
         session.beginConfiguration()
         if !self.session.outputs.contains(self.photoOutput) && self.session.canAddOutput(self.photoOutput) {
             self.session.addOutput(self.photoOutput)
+        }
+        if !self.session.outputs.contains(self.videoOutput) && self.session.canAddOutput(self.videoOutput) {
+            self.session.addOutput(self.videoOutput)
         }
         photoOutput.setPreparedPhotoSettingsArray([photoSettings]) { isSuccess, error in
             
@@ -88,6 +93,7 @@ class CameraCaptureManager: NSObject {
             }
         }
     }
+
     /// 关闭相机
     func stopRunningCamera() {
         DispatchQueue.main.async {
@@ -96,6 +102,7 @@ class CameraCaptureManager: NSObject {
             }
         }
     }
+    
     private var device : AVCaptureDevice?
     private let session : AVCaptureSession = {
         let session = AVCaptureSession.init()
@@ -131,5 +138,25 @@ extension CameraCaptureManager : AVCapturePhotoCaptureDelegate
             self.delegate?.cameraCaptureManager(manager: self, didCaptureImageData: imageData! as NSData)
         }
     }
-    
+}
+
+extension CameraCaptureManager: AVCaptureVideoDataOutputSampleBufferDelegate
+{
+    /// 获取捕获数据
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+      // Grab the pixelbuffer frame from the camera output
+      guard
+        let pixelBuffer = sampleBuffer.imageBuffer,
+        let backgroundImage = UIImage.creatImageWithColor(color: UIColor.white)?.cgImage else {
+        return
+      }
+      DispatchQueue.global().async {
+          if let output = DWImageProcess.shared.processVideoFrame(foreground: pixelBuffer, background: backgroundImage) {
+              DispatchQueue.main.async {
+                  self.delegate?.cameraVideoSample(manager: self, image: output)
+              }
+          }
+      }
+    }
+
 }

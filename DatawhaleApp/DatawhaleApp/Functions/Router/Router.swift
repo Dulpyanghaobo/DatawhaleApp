@@ -22,7 +22,6 @@ struct Router {
     let routerFactor: RouterFactor = RouterFactor.shared
     
     func configRouter(router: [String: RouterObject]) {
-        routerFactor.routerList
     }
 }
 

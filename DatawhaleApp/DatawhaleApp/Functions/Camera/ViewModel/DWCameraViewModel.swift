@@ -17,6 +17,9 @@ class DWCameraViewModel : NSObject {
     
     weak var controllerView : UIViewController!
     
+    /// if image not nil, the filter is working
+    var currentImage: CIImage?
+    
     func configCamera() {
         AVCaptureDevice.requestAccess(for: .video) { grant in
             if grant {
@@ -49,5 +52,8 @@ extension DWCameraViewModel : CameraCaptureManagerDelegate
         
     }
     
+    func cameraVideoSample(manager: CameraCaptureManager, image: CIImage?) {
+        self.currentImage = image
+    }
     
 }

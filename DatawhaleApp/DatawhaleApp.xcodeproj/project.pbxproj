@@ -110,6 +110,9 @@
 		DAD408AA27498D04008C04AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD408A927498D04008C04AE /* GoogleService-Info.plist */; };
 		DD42DC71108BBDA69B5B68EC /* Pods_DatawhaleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B033745DB6BF2533ED2AE52E /* Pods_DatawhaleApp.framework */; };
 		F9E8D73512DFB2B0AC0090B8 /* Pods_DatawhaleApp_DatawhaleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93469D8237F2646CD58EED6A /* Pods_DatawhaleApp_DatawhaleAppUITests.framework */; };
+		FA8E9E8927C8C7CD008680D6 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E9E8827C8C7CD008680D6 /* Actions.swift */; };
+		FAB396B127C87A8F000D2666 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB396B027C87A8F000D2666 /* UIImage+Extension.swift */; };
+		FAB396B327C87DD1000D2666 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB396B227C87DD1000D2666 /* CameraView.swift */; };
 		FACD78EE27C76801006AE674 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD78ED27C76801006AE674 /* Greeting.swift */; };
 		FACD78F127C76DA5006AE674 /* ImageCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD78F027C76DA5006AE674 /* ImageCombine.swift */; };
 		FACD78F427C76F3F006AE674 /* DWFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD78F327C76F3F006AE674 /* DWFilter.swift */; };
@@ -257,6 +260,9 @@
 		DAD408A927498D04008C04AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DFF7BE5FA984E5BB758763EF /* Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp-DatawhaleAppUITests/Pods-DatawhaleApp-DatawhaleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4FBCA0D61F724C2DB4208B9 /* Pods-DatawhaleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatawhaleApp.debug.xcconfig"; path = "Target Support Files/Pods-DatawhaleApp/Pods-DatawhaleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FA8E9E8827C8C7CD008680D6 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		FAB396B027C87A8F000D2666 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "DatawhaleApp/Functions/Router/UIImage+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		FAB396B227C87DD1000D2666 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		FACD78ED27C76801006AE674 /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
 		FACD78F027C76DA5006AE674 /* ImageCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCombine.swift; sourceTree = "<group>"; };
 		FACD78F327C76F3F006AE674 /* DWFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWFilter.swift; sourceTree = "<group>"; };
@@ -596,6 +602,7 @@
 		AACD6FA0277D65D600D4CC8B /* Color */ = {
 			isa = PBXGroup;
 			children = (
+				FAB396B027C87A8F000D2666 /* UIImage+Extension.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -758,6 +765,7 @@
 		DA5D920327403B9800699555 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				FA8E9E8727C8C7AB008680D6 /* Action */,
 				FACD78FF27C77C86006AE674 /* Router */,
 				FACD78F927C77A26006AE674 /* ProcessResult */,
 				DA5D922E2741052200699555 /* Tabbar */,
@@ -1132,6 +1140,7 @@
 			isa = PBXGroup;
 			children = (
 				DA5E20DA27623815009F6FD8 /* DWCameraBottomView.swift */,
+				FAB396B227C87DD1000D2666 /* CameraView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1212,6 +1221,14 @@
 				DA6310AD2755315E005CACD7 /* NetworkManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		FA8E9E8727C8C7AB008680D6 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				FA8E9E8827C8C7CD008680D6 /* Actions.swift */,
+			);
+			path = Action;
 			sourceTree = "<group>";
 		};
 		FACD78EC27C762ED006AE674 /* Process */ = {
@@ -1519,6 +1536,7 @@
 				DA5D91D4274032B200699555 /* ViewController.swift in Sources */,
 				DA4E89D62746AFCA00FABF97 /* DWLoginViewController.swift in Sources */,
 				AA9FD421276B2FC900191956 /* DWPopProducer.swift in Sources */,
+				FA8E9E8927C8C7CD008680D6 /* Actions.swift in Sources */,
 				AACD6FD6277EA0FC00D4CC8B /* DGElasticPullToRefreshConstants.swift in Sources */,
 				DA5D927A2742B13900699555 /* UIView+JJFloatingActionButton.swift in Sources */,
 				DA6310AC2755310B005CACD7 /* MoyaConfig.swift in Sources */,
@@ -1538,6 +1556,7 @@
 				AA9FD3F1276875B100191956 /* DWAWaitBehavior.swift in Sources */,
 				FACD790727C78871006AE674 /* RouterAction.swift in Sources */,
 				AA9FD432276B482D00191956 /* PopCompatiable.swift in Sources */,
+				FAB396B327C87DD1000D2666 /* CameraView.swift in Sources */,
 				DA5D927D2742B13900699555 /* AnimationConfiguration.swift in Sources */,
 				AA9FD3EF2768759D00191956 /* DWDefaultBehavior.swift in Sources */,
 				FACD78EE27C76801006AE674 /* Greeting.swift in Sources */,
@@ -1569,6 +1588,7 @@
 				AA9FD434276B48A500191956 /* Pop.swift in Sources */,
 				AA96C94627633F23001ED233 /* FPSManager.swift in Sources */,
 				AA9FD41D276B2F7800191956 /* DWPopOperation.swift in Sources */,
+				FAB396B127C87A8F000D2666 /* UIImage+Extension.swift in Sources */,
 				DA5D92792742B13900699555 /* JJFloatingActionButton+Animation.swift in Sources */,
 				FACD78F427C76F3F006AE674 /* DWFilter.swift in Sources */,
 				DA5D92552741552B00699555 /* DWClouseDefines.swift in Sources */,
